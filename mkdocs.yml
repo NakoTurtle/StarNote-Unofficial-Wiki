@@ -2,7 +2,7 @@ site_name: StarNote Unofficial Wiki
 theme:
   name: material
   palette:
-
+  
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
       toggle:
@@ -22,12 +22,13 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to system preference
-    features:
-      - navigation.path
-      - navigation.sections
-      - navigation.top
+  features:
+    - navigation.path
+    - navigation.sections
+    - navigation.top
 extra_css:
   - stylesheets/extra.css
+
 
 
 
