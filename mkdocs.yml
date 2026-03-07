@@ -1,4 +1,6 @@
 site_name: StarNote Unofficial Wiki
 theme:
   name: material
+extra_css:
+  - stylesheets/extra.css
 
