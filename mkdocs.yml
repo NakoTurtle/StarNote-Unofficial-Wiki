@@ -11,19 +11,24 @@ theme:
 
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: starnote_light
+      scheme: starnote
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: starnote_dark
+      scheme: starnote
       toggle:
         icon: material/weather-night
         name: Switch to system preference
+    features:
+      - navigation.path
+      - navigation.sections
+      - navigation.top
 extra_css:
   - stylesheets/extra.css
+
 
 
 
