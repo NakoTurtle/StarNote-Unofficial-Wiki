@@ -1,9 +1,9 @@
 [data-md-color-scheme="default"] {
   --md-primary-fg-color:        #1891B5;
-  --md-primary-bg-color:        #96D4DB;
+  --md-default-bg-color:        #96D4DB;
 }
 
 [data-md-color-scheme="slate"] {
   --md-primary-fg-color:        #1891B5;
-  --md-primary-bg-color:        #527386;
+  --md-default-bg-color:        #527386;
 }
