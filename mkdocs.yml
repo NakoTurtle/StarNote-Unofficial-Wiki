@@ -1,5 +1,6 @@
 site_name: StarNote Unofficial Wiki
 theme:
+  name: material
   palette:
 
     # Palette toggle for automatic mode
@@ -23,5 +24,6 @@ theme:
         name: Switch to system preference
 extra_css:
   - stylesheets/extra.css
+
 
 
