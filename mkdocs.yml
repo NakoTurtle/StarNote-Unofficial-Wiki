@@ -11,7 +11,7 @@ theme:
 
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default 
+      scheme: youtube 
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -24,6 +24,7 @@ theme:
         name: Switch to system preference
 extra_css:
   - stylesheets/extra.css
+
 
 
 
