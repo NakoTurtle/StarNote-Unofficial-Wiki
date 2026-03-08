@@ -24,10 +24,10 @@ theme:
         name: Switch to pure black
     
     # Palette toggle for dark mode
-    - scheme: starnote-black
-      toggle:
-        icon: material/brightness-empty
-        name: Switch to system preference
+    -   scheme: starnote-black
+        toggle:
+          icon: material/brightness-2
+          name: Switch to system preference
   features:
     - navigation.path
     - navigation.sections
@@ -38,6 +38,7 @@ extra_css:
   - stylesheets/extra.css
 plugins:
 - search
+
 
 
 
