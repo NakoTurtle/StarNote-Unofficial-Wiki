@@ -5,12 +5,17 @@ Darker Secondary: #527386
 Dark Mode: #212121/#2D2D2D
 Light Mode: #FBFBFB
 */
-[data-md-color-scheme="default"] {
+[data-md-color-scheme="starnote-light"] {
   --md-primary-fg-color:        #1891B5;
   --md-default-bg-color:        #FBFBFB;
 }
 
-[data-md-color-scheme="slate"] {
+[data-md-color-scheme="starnote-dark"] {
   --md-primary-fg-color:        #1891B5;
   --md-default-bg-color:        #2D2D2D;
+}
+
+[data-md-color-scheme="starnote-black"] {
+  --md-primary-fg-color:        #1891B5;
+  --md-default-bg-color:        #000000;
 }
