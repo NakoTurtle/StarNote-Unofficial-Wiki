@@ -26,7 +26,7 @@ theme:
     # Palette toggle for dark mode
     -   scheme: starnote-black
         toggle:
-          icon: material/brightness-2
+          icon: material/brightness-empty
           name: Switch to system preference
   features:
     - navigation.path
@@ -38,6 +38,7 @@ extra_css:
   - stylesheets/extra.css
 plugins:
 - search
+
 
 
 
