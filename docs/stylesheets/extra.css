@@ -1,9 +1,16 @@
+/* Starnote Theme Colors:
+Primary: #1891B5
+Secondary: #96D4DB
+Darker Secondary: #527386
+Dark Mode: #212121/#2D2D2D
+Light Mode: #FBFBFB
+*/
 [data-md-color-scheme="default"] {
   --md-primary-fg-color:        #1891B5;
-  --md-default-bg-color:        #96D4DB;
+  --md-default-bg-color:        #FBFBFB;
 }
 
 [data-md-color-scheme="slate"] {
   --md-primary-fg-color:        #1891B5;
-  --md-default-bg-color:        #527386;
+  --md-default-bg-color:        #2D2D2D;
 }
