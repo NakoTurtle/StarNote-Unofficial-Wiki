@@ -26,8 +26,13 @@ theme:
     - navigation.path
     - navigation.sections
     - navigation.top
+    - search.highlight
+    - search.share
 extra_css:
   - stylesheets/extra.css
+  plugins:
+  - search
+
 
 
 
