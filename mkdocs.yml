@@ -1,6 +1,6 @@
 site_name: StarNote Unofficial Wiki
 theme:
-  logo: assets/StarNote Unofficial.svg
+  logo: sparkle-fill
   favicon: sparkle-fill
   #assets/StarNote Unofficial.svg
   name: material
