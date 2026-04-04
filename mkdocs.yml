@@ -26,10 +26,10 @@ theme:
         name: Switch to pure black
     
     # Palette toggle for dark mode
-    -   scheme: starnote-black
-        toggle:
-          icon: material/circle
-          name: Switch to system preference
+    #-   scheme: starnote-black
+    #    toggle:
+    #      icon: material/circle
+    #      name: Switch to system preference
   features:
     - navigation.path
     - navigation.sections
