@@ -40,7 +40,10 @@ extra_css:
   - stylesheets/extra.css
 plugins:
 - search
-
+nav:
+  - Home: index.md
+  - Features: features.md
+  - Pens: pens.md
 
 
 
