@@ -1,4 +1,4 @@
-!!! warning "‼️Important‼️"
+!!! warning "Important"
     This wiki was not made by the developers of StarNote and may not be completely accurate!
 
 # 🌟 StarNote Unofficial Wiki
