@@ -42,8 +42,12 @@ plugins:
 - search
 nav:
   - Home: index.md
-  - Features: features.md
   - Pens: pens.md
+  #- Features: features.md
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
 
 
