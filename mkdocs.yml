@@ -1,7 +1,7 @@
 site_name: StarNote Unofficial Wiki
 theme:
-  logo: sparkle-fill-24
-  favicon: octicons-sparkle-fill-24
+  logo: :octicons-sparkle-fill-24:
+  favicon: :octicons-sparkle-fill-24:
   #assets/StarNote Unofficial.svg
   name: material
   palette:
