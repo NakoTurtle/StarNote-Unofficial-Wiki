@@ -42,7 +42,7 @@ extra_css:
 plugins:
 - search
 nav:
-  - Introduction: welcome.md
+  - Introduction: index.md
   - Tools & Toolbar: tools.md
   #- Other Tools: other-tools.md
 markdown_extensions:
