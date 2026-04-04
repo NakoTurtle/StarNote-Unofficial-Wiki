@@ -42,9 +42,9 @@ extra_css:
 plugins:
 - search
 nav:
-  - Home: index.md
-  - Pens: pens.md
-  #- Features: features.md
+  - Introduction: welcome.md
+  - Tools & Toolbar: tools.md
+  #- Other Tools: other-tools.md
 markdown_extensions:
   - admonition
   - pymdownx.details
