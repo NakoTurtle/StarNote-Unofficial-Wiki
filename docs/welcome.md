@@ -1,5 +1,5 @@
 !!! warning "Important"
-    This wiki was not made by the developers of StarNote and may not be completely accurate!
+    This wiki was not made by the developers of StarNote and still a work in progrees so it may not be completely accurate!
 
 # 🌟 StarNote Unofficial Wiki
 
