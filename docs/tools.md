@@ -6,12 +6,11 @@
 This guide covers the technical specifications and customization options for pens.
 
 ---
-
-##  Core Pen Types
-StarNote uses a "Pen Box" system allowing for **16 custom presets**. Tap any tool in the toolbar twice to access its specific configuration menu.
-
 !!! question "Remember"
     Most of these features will only work while using an active stylus.
+    
+##  Core Pen Types
+StarNote uses a "Pen Box" system allowing for **16 custom presets**. Tap any tool in the toolbar twice to access its specific configuration menu.
 
 ### **1. Fountain Pen**
 * **Behavior:** A reliable pen that works well for writing naturally.
