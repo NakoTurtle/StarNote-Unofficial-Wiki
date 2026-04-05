@@ -7,7 +7,7 @@ This guide covers the technical specifications and customization options for pen
 
 ---
 !!! question "Remember"
-    Most of these features will only work while using an active stylus.
+    Some of these features will only work properly when using an active stylus.
     
 ##  Core Pen Types
 StarNote uses a "Pen Box" system allowing for **16 custom presets**. Tap any tool in the toolbar twice to access its specific configuration menu.
@@ -83,14 +83,13 @@ A tool to precisely remove anything you want.
 * **Erase Highlighter Only:** Makes so the eraser tool only removes highlighter without disturbing other elements.
 * **Erase Tape Only:** Makes so the eraser tool only removes tape without disturbing other elements.
 * **Select Stroke:** 
-*  **Auto-Deselect Eraser:** When enabled, the app automatically returns back to the tool you used before, once you lift the stylus after erasing.
+* **Auto-Deselect Eraser:** When enabled, the app automatically returns back to the tool you used before, once you lift the stylus after erasing.
 ### Lasso:
 Tool for selecting objects in your notes in order to move or edit them.
 #### Lasso Modes:
 *  **Free Lasso:** Makes so you can draw a shape exactly around what you want to select.
 *  **Rectangular Lasso:** Makes use of a rectangular selection box.
-#### Other Lasso Options:
-The Lasso tool includes options to include or exclude the following elements when making a selection:
+#### Other Lasso Options (Include or Exclude):
 * Shape
 * Picture/Sticker
 * Tape
@@ -121,9 +120,14 @@ Allows the user to insert typed text directly into their notes.
     * Right
 * **Font Color:** Features a set of 5 preset, but customizable colors.
 ### Excerpt Pen:
-*
+This is a tool for "citing" parts of your notes either within the same note, or to another note, allowing you to jump back to the original note. (Jumping not available when placing the excerpt in the same note)
+#### Excerpt Pen Modes:
+* **Text Excerpt:** Allows exceprting typed text in your notes.
+* **Box Excerpt:** Allows excerpting any part of your notes.
+#### Excerpt Pen Options:
+* **Show the excerpt icon:** Enables or disables the icon on excerpts.
 ### Tagging Tool:
-* 
+Allows the user to add new or existing tags to their notes. These tags are resizable and can be filtered by in the home screen side bar.
 ### Shape Tool:
 Allows the user to add specialized shapes to their notes.
 #### List of the Available Shapes:
