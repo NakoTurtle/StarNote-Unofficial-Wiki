@@ -76,6 +76,9 @@ A tool to precisely remove anything you want.
 #### **Other Eraser Options:**
 * **Size:** 
 * **Scribble to Erase:** (1)
+    { .annotate }
+    
+    1.  Only available on android.
 * **Erase Highlighter Only:** 
 * **Erase Tape Only:** 
 * **Select Stroke:** 
@@ -140,7 +143,7 @@ Creates opaque, removable strips. Tap to "reveal" what is underneath.
 ### **Sticker:**
 *  
 ### **Colors:**
-* 
+*  
 ### **Brush Toolbar:**
 *  
 ---
@@ -151,7 +154,3 @@ Creates opaque, removable strips. Tap to "reveal" what is underneath.
 * **Transparency Slider:** Adjust the "Alpha" channel for any pen type to create custom layered effects.
 
 ***
-
-{ .annotate }
-
-1.  Only available on android.
