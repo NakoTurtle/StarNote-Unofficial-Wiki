@@ -77,7 +77,10 @@ A tool to precisely remove anything you want.
 * **Size:** 
 * **Scribble to Erase:** (1)
 { .annotate }
-1. Only available on android.
+
+1.  Only available on android.
+
+
 * **Erase Highlighter Only:** 
 * **Erase Tape Only:** 
 * **Select Stroke:** 
