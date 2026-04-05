@@ -75,7 +75,8 @@ A tool to precisely remove anything you want.
 * **Circular selection eraser:** Deletes everything within a region you circle around.
 #### **Other Eraser Options:**
 * **Size:** 
-* **Scribble to Erase:** 
+* **Scribble to Erase:** (1) { .annotate }
+1. Only available on android.
 * **Erase Highlighter Only:** 
 * **Erase Tape Only:** 
 * **Select Stroke:** 
