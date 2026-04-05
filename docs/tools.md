@@ -79,6 +79,7 @@ A tool to precisely remove anything you want.
     { .annotate }
     
     1.  Only available on android.
+
 * **Erase Highlighter Only:** 
 * **Erase Tape Only:** 
 * **Select Stroke:** 
