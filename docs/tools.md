@@ -12,7 +12,7 @@ This guide covers the technical specifications and customization options for pen
 ##  Core Pen Types
 StarNote uses a "Pen Box" system allowing for **16 custom presets**. Tap any tool in the toolbar twice to access its specific configuration menu.
 
-### **1. Fountain Pen**
+### 1. Fountain Pen
 * **Behavior:** A reliable pen that works well for writing naturally.
 * **Dynamics:** Always has some level of pressure sensitivity, even when set to 0%.
 * **Settings:** 
@@ -20,27 +20,27 @@ StarNote uses a "Pen Box" system allowing for **16 custom presets**. Tap any too
     * Thickness
     * Stroke Stabilization
 
-### **2. Calligraphy Pen**
+### 2. Calligraphy Pen
 * **Behavior:** A fancy pen that works well for making beautiful headings or labels.
 * **Dynamics:** Makes thicker lines on downwards strokes and thinner lines on upwards strokes.
 * **Settings:** 
     * Thickness
     * Stroke Stabilization
 
-### **3. SoftPaint Brush (v1.2+)**
+### 3. SoftPaint Brush (v1.2+)
 * **Behavior:** A flowy pen that that's great for sketching or making headings.
 * **Dynamics:** Fills the stroke as you write and tapers the end based on the writing speed.
 * **Settings:** 
     * Thickness
 
-### **4. Ballpoint Pen**
+### 4. Ballpoint Pen
 * **Behavior:** A consistent pen great for making precise diagrams or neat handwriting and drawing.
 * **Dynamics:** Uniform line width regardless of pressure or speed.
 * **Settings:** 
     * Thickness
     * Stroke Stabilization
 
-### **5. Pencil**
+### 5. Pencil
 * **Behavior:** A semi transparent pen great for coloring, shading or making quick sketches.
 * **Dynamics:** Appends brushes to existing strokes, making them darker until saturated.
 * **Settings:**  
@@ -62,20 +62,20 @@ Customize how the strokes react to your stylus to match your writing style.
 ##  Utility Writing Tools
 Tools designed for interaction and correction.
 
-### **Highlighter:**
+### Highlighter:
 * **Behavior:** Semi-transparent ink.
 * **Dynamics:** Layers *behind* existing handwriting to prevent obscuring notes.
-#### **Other Highlighter Options:**
+#### Other Highlighter Options:
 * **Draw Straght Line:** Automatically snaps your highlight to a straight line.
-### **Eraser:**
+### Eraser:
 A tool to precisely remove anything you want.
-#### **Eraser Modes:**
+#### Eraser Modes:
 * **Stroke Eraser:** Deletes the entire continuous line/shape.
 * **Partial Eraser:** Deletes only the pixels the eraser touches (standard eraser).
 * **Circular selection eraser:** Deletes everything within a region you circle around.
-#### **Other Eraser Options:**
-* **Size:** 
-* **Scribble to Erase:** (1)
+#### Other Eraser Options:
+* **Size:** Changes the size of the eraser brush.
+* (1) **Scribble to Erase:** Enables erasing content by simply scribbling it out.
     { .annotate }
     
     1.  Only available on android.
@@ -83,12 +83,12 @@ A tool to precisely remove anything you want.
 * **Erase Tape Only:** 
 * **Select Stroke:** 
 *  **Auto-Deselect Eraser:** When enabled, the app automatically returns back to the tool you used before, once you lift the stylus after erasing.
-### **Lasso:**
+### Lasso:
 Tool for selecting objects in your notes in order to move or edit them.
-#### **Lasso Modes:**
+#### Lasso Modes:
 *  **Free Lasso:** 
 *  **Rectangular Lasso:** 
-#### **Other Lasso Options:**
+#### Other Lasso Options:
 The Lasso tool includes options to include or exclude the following elements when making a selection:
 * Shape
 * Picture/Sticker
@@ -99,52 +99,52 @@ The Lasso tool includes options to include or exclude the following elements whe
 * Link
 * Tag
 * Table
-### **The Laser Pointer:** 
+### The Laser Pointer: 
 A temporary ink tool for "drawing" attention to parts of a diagram during a presentation or review session. The ink disappears after a few seconds.
-#### **Laser Pointer Modes:**
+#### Laser Pointer Modes:
 * **Line:** 
 * **Dot:** 
-#### **Other Laser Pointer Options:**
+#### Other Laser Pointer Options:
 * **Thickness:** 
 * **Duration:** 
-### **Picture Tool:**
+### Picture Tool:
 Allows the user to insert images directly into their notes.
-#### **Picture Tool Options:**
+#### Picture Tool Options:
 * **Insert From Album:** 
 * **Take Photo:** 
-### **Textbox:**
+### Textbox:
 Allows the user to insert typed text directly into their notes.
-#### **Textbox Options:**
+#### Textbox Options:
 * Font Type:
 * Font Size:
 * Multiply:
 * Font Style:
 * Font Color:
-### **Shape Tool:**
+### Shape Tool:
 Allows the user to add specialized shapes to their notes.
-#### **List of the Available Shapes:**
+#### List of the Available Shapes:
 *  
-#### **Shape Tool Options:**
+#### Shape Tool Options:
 * Stroke Thickness:
 * Shape Fill:
-### **The Tape Tool:** 
+### The Tape Tool:
 Creates opaque, removable strips. Tap to "reveal" what is underneath.
 * *Usage:* Perfect for **Active Recall**—hide formulas or answers while studying for your A1 exams.
-### **Excerpt Pen:**
+### Excerpt Pen:
 *  
-### **Tag:**
+### Tag:
 *  
-### **Ruler:**
+### Ruler:
 *  
-### **Magnifier:**
+### Magnifier:
 *  
-### **Table:**
+### Table:
 *  
-### **Sticker:**
+### Sticker:
 *  
-### **Colors:**
+### Colors:
 *  
-### **Brush Toolbar:**
+### Brush Toolbar:
 *  
 ---
 
