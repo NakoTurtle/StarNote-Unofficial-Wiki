@@ -75,7 +75,7 @@ A tool to precisely remove anything you want.
 * **Circular selection eraser:** Deletes everything within a region you circle around.
 #### **Other Eraser Options:**
 * **Size:** 
-* **Scribble to Erase:** (1) { .annotate } 1.  Only available on android.
+* **Scribble to Erase:** (1)
 * **Erase Highlighter Only:** 
 * **Erase Tape Only:** 
 * **Select Stroke:** 
@@ -152,8 +152,6 @@ Creates opaque, removable strips. Tap to "reveal" what is underneath.
 
 ***
 
-Lorem ipsum dolor sit amet, (1) consectetur adipiscing elit.
 { .annotate }
 
-1.  :man_raising_hand: I'm an annotation! I can contain `code`, __formatted
-    text__, images, ... basically anything that can be expressed in Markdown.
+1.  Only available on android.
