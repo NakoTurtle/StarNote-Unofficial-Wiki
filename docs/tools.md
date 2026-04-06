@@ -183,10 +183,19 @@ Allows the user to add specialized shapes to their notes.
 * **Stroke Thickness:** Changes the width of the lines used for drawing the shapes.
 * **Shape Fill:** Allows for a color to be selected as the fill color of the shape. Can also be synced with the stroke color of the shape, with a specified opacity.
 ### Sticker:
-* 
+* Allows users to place one of the preexisting or custom added stickers to their notes, primarily for decoration.
 ### The Tape Tool:
 Creates opaque, removable strips. Tap to "reveal" what is underneath.
-* *Usage:* Perfect for **Active Recall**—hide formulas or answers while studying for your A1 exams.
+* *Usage:* Perfect for **Active Recall**—hide formulas or answers while studying.
+#### Tape Tool Modes:
+ * **Draw Straight Line:** Makes the tape tool only draw in straight lines.
+ * **Rectangle Drawing:** Makes the tape tool able to draw rectangular shapes at custom sizes.
+#### Tape Tool Options:
+* **Show All Tapes:** Toggle to show or hide all tapes in the note.
+* **Style:** Changes the pattern displayed on the tape surface.
+* **Thickness:** Changes the width of the tape for the straight tape mode.
+* **Clear tape on current page:** Removes all tape drawn on the current page of the note.
+* **Clear tapes on all pages:** Removes all tape drawn anywhere in the current note.
 ### The Laser Pointer: 
 A temporary ink tool for "drawing" attention to parts of a diagram during a presentation or review session. The ink disappears after a few seconds.
 #### Laser Pointer Modes:
@@ -196,11 +205,22 @@ A temporary ink tool for "drawing" attention to parts of a diagram during a pres
 * **Thickness:** Changes the size of the pointer.
 * **Duration:** Changes the length of time the laser stays before fading away.   
 ### Ruler:
-*  
+Toggle to show a ruler on the screen that you can move or rotate using two fingers. The measurement units are not specified, but angle is in degrees. When drawing towards or against the ruler, the line snaps against the straight edge and stays there until the end of the stroke.
 ### Magnifier:
-*  
+Tap to show a magnified view of the zoom box. 
+#### Magnifier Usage:
+* The zoom box is resizable, but the magnified view is not. 
+* The magnifier is designed particularly for writing purposes, and the arrow buttons are designed to help with it. Simply hit the left or right arrow buttons to move the zoom box in that direction. Hit the "enter" arrow to move the box downwards to the next line and back to the left of the page. When auto-advance is toggled on, the zoom box moves automatically when your stroke crosses the resizable edge area on the right.
+* To close the magnifier, hit the cross on the magnified view.
 ### Table:
-* 
+The table tool allows users to insert tables into their notes.
+#### Table Tool Modes:
+* **Header Row:** Toggles whether the drawn table has a header row or not.
+* **Header Column:** Toggles whether the drawn table has a header column or not.
+* **Rows:** Changes the number of rows in the drawn table. (1-50)
+* **Columns:** Changes the number of columns in the drawn table. (1-50)
+* **Border Thickness:** Changes the thickness of the table borders.
+* **Fill Color:** Toggles whether the table cells have a fill color and gives options to change the color when enabled.
 ### Toolbar Settings
 *  
 ### Colors:
