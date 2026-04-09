@@ -5,7 +5,7 @@ import os
 
 def fetch_starnote_requests():
     # Searching for 'StarNote' to ensure we find SOMETHING, even if not a feature request
-    url = "https://www.reddit.com/r/StarNoteApp/search.json?q=Feature&restrict_sr=1&sort=top&t=month"
+    url = "https://old.reddit.com/r/StarNoteApp/search.json?q=Feature&restrict_sr=1&sort=top&t=month"
     
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) StarNoteDiagnostic/1.1 (Stellenbosch University Project)',
