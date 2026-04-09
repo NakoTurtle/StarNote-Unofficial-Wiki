@@ -11,7 +11,7 @@ def fetch_starnote_requests():
         't': 'month',
         'limit': 100
     }
-    headers = {'User-Agent': 'Stellenbosch_Student_Wiki_Bot/1.0 (Educational Project)'}
+    headers = {'User-Agent': 'Unofficial_StarNote_Wiki_Bot/1.0'}
 
     try:
         response = requests.get(url, params=params, headers=headers)
