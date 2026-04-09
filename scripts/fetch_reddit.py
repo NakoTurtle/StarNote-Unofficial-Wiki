@@ -4,61 +4,53 @@ import time
 import os
 
 def fetch_starnote_requests():
-    # 2026 Direct Search URL: Searches r/StarNoteApp for the specific lightbulb flair
-    # URL encoded "💡 Feature Request" = %F0%9F%92%A1%20Feature%20Request
-    url = "https://www.reddit.com/r/StarNoteApp/search.json?q=flair:%22%F0%9F%92%A1%20Feature%20Request%22&restrict_sr=1&sort=top&t=month"
+    # We broaden the search to any post containing "Feature" or "Suggestion" in r/StarNoteApp
+    # This ignores the tricky emoji flair entirely.
+    url = "https://www.reddit.com/r/StarNoteApp/search.json?q=title:(Feature%20OR%20Request%20OR%20Suggestion)&restrict_sr=1&sort=top&t=month"
     
-    # Enhanced Headers to avoid being flagged as a generic bot
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 StarNoteWikiBot/1.0',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 StarNoteStudentProject/1.0',
         'Accept': 'application/json'
     }
 
     try:
-        print(f"Connecting to Reddit: {url}")
         response = requests.get(url, headers=headers, timeout=15)
-        
-        print(f"Status Code: {response.status_code}")
+        print(f"Reddit Search Status: {response.status_code}")
         
         if response.status_code != 200:
             return []
             
         data = response.json()
-        posts = data.get('data', {}).get('children', [])
-        print(f"Successfully retrieved {len(posts)} posts.")
-        return posts
-        
+        return data.get('data', {}).get('children', [])
     except Exception as e:
-        print(f"Network error: {e}")
+        print(f"Error: {e}")
         return []
 
 def aggregate_features(posts):
-    # Dictionary to track cumulative upvotes for similar ideas
+    # Expanded keywords to catch variations in how students write
     groups = {
-        "LaTeX & Math Support": 0,
-        "Cloud Sync (Auto)": 0,
-        "Object Grouping & Layers": 0,
-        "Handwriting OCR Search": 0,
-        "Audio Recording Sync": 0,
-        "Windows/PC Version": 0,
-        "Sticker Management": 0
+        "LaTeX / Math Support": ["latex", "math", "formula", "equation"],
+        "Cloud Sync (Auto)": ["sync", "cloud", "drive", "backup"],
+        "Object Grouping": ["grouping", "group", "layers", "select"],
+        "Handwriting Search": ["search", "ocr", "finding"],
+        "Windows/PC Version": ["windows", "desktop", "laptop", "pc"],
+        "Audio Sync": ["audio", "record", "voice"]
     }
     
+    # Initialize counts
+    scores = {key: 0 for key in groups}
     found_any = False
+
     for post in posts:
         title = post['data']['title'].lower()
         upvotes = post['data']['score']
         
-        # Simple keyword matching logic
-        for key in groups:
-            # We check for a subset of the key to be flexible
-            keyword = key.split(' ')[0].lower() 
-            if keyword in title:
-                groups[key] += upvotes
+        for feature_name, keywords in groups.items():
+            if any(word in title for word in keywords):
+                scores[feature_name] += upvotes
                 found_any = True
                 
-    # Return sorted list of tuples (Feature, Score)
-    return sorted(groups.items(), key=lambda x: x[1], reverse=True), found_any
+    return sorted(scores.items(), key=lambda x: x[1], reverse=True), found_any
 
 def generate_markdown(sorted_data, post_count, found_any):
     # Metadata and Status Admonitions
