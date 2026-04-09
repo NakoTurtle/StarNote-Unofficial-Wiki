@@ -3,23 +3,32 @@ import json
 import time
 
 def fetch_starnote_requests():
-    # 2026 Best Practice: Be specific with your User-Agent to avoid 429 errors
-    url = "https://www.reddit.com/r/StarNoteApp/search.json"
-    params = {
-        'q': 'flair:"💡 Feature Request"',
-        'sort': 'top',
-        't': 'month',
-        'limit': 100
+    # Use the direct subreddit JSON endpoint + the specific flair search string
+    # We use %20 for spaces and %22 for quotes to ensure the URL is clean
+    url = "https://www.reddit.com/r/StarNoteApp/search.json?q=flair:%22%F0%9F%92%A1%20Feature%20Request%22&restrict_sr=1&sort=top&t=month"
+    
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 StellenboschStudentProject/1.0',
+        'Accept': 'application/json'
     }
-    headers = {'User-Agent': 'Unofficial_StarNote_Wiki_Bot/1.0'}
 
     try:
-        response = requests.get(url, params=params, headers=headers)
-        response.raise_for_status()
+        response = requests.get(url, headers=headers, timeout=15)
+        
+        # Log the status to the GitHub Action console so we can see what happened
+        print(f"Reddit API Status Code: {response.status_code}")
+        
+        if response.status_code != 200:
+            print(f"Error: Received status {response.status_code}")
+            return []
+            
         data = response.json()
-        return data['data']['children']
+        posts = data.get('data', {}).get('children', [])
+        print(f"Found {len(posts)} potential feature posts.")
+        return posts
+        
     except Exception as e:
-        print(f"Error fetching data: {e}")
+        print(f"Scraper crashed with error: {e}")
         return []
 
 def aggregate_features(posts):
