@@ -4,97 +4,62 @@ import time
 import os
 
 def fetch_starnote_requests():
-    # We broaden the search to any post containing "Feature" or "Suggestion" in r/StarNoteApp
-    # This ignores the tricky emoji flair entirely.
-    url = "https://www.reddit.com/r/StarNoteApp/search.json?q=title:(Feature%20OR%20Request%20OR%20Suggestion)&restrict_sr=1&sort=top&t=month"
+    # Searching for 'StarNote' to ensure we find SOMETHING, even if not a feature request
+    url = "https://www.reddit.com/r/StarNoteApp/search.json?q=Feature&restrict_sr=1&sort=top&t=month"
     
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 StarNoteStudentProject/1.0',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) StarNoteDiagnostic/1.1 (Stellenbosch University Project)',
         'Accept': 'application/json'
     }
 
     try:
         response = requests.get(url, headers=headers, timeout=15)
-        print(f"Reddit Search Status: {response.status_code}")
+        status = response.status_code
         
-        if response.status_code != 200:
-            return []
+        if status != 200:
+            return [], f"Error: Status Code {status}", response.text[:500]
             
         data = response.json()
-        return data.get('data', {}).get('children', [])
+        posts = data.get('data', {}).get('children', [])
+        
+        # Capture the raw keys of the first post for debugging
+        debug_sample = ""
+        if posts:
+            debug_sample = str(posts[0]['data'].keys())
+        else:
+            debug_sample = f"Full JSON Response: {json.dumps(data)[:500]}"
+            
+        return posts, f"Success (Status {status})", debug_sample
+        
     except Exception as e:
-        print(f"Error: {e}")
-        return []
+        return [], "Exception Occurred", str(e)
 
-def aggregate_features(posts):
-    # Expanded keywords to catch variations in how students write
-    groups = {
-        "LaTeX / Math Support": ["latex", "math", "formula", "equation"],
-        "Cloud Sync (Auto)": ["sync", "cloud", "drive", "backup"],
-        "Object Grouping": ["grouping", "group", "layers", "select"],
-        "Handwriting Search": ["search", "ocr", "finding"],
-        "Windows/PC Version": ["windows", "desktop", "laptop", "pc"],
-        "Audio Sync": ["audio", "record", "voice"]
-    }
-    
-    # Initialize counts
-    scores = {key: 0 for key in groups}
-    found_any = False
-
-    for post in posts:
-        title = post['data']['title'].lower()
-        upvotes = post['data']['score']
-        
-        for feature_name, keywords in groups.items():
-            if any(word in title for word in keywords):
-                scores[feature_name] += upvotes
-                found_any = True
-                
-    return sorted(scores.items(), key=lambda x: x[1], reverse=True), found_any
-
-def generate_markdown(sorted_data, post_count, found_any):
-    # Metadata and Status Admonitions
+def generate_markdown(posts, status_msg, debug_text):
     timestamp = time.strftime('%Y-%m-%d %H:%M:%S')
-    content = f"# 🚀 Live Feature Tracker\n\n"
-    content += f"!!! info \"Status Check\"\n"
-    content += f"    **Last Updated:** {timestamp} (SAST)  \n"
-    content += f"    **Reddit Posts Scanned:** {post_count}\n\n"
+    content = f"# 🛠️ Wiki Diagnostic Page\n\n"
+    content += f"!!! info \"System Internals\"\n"
+    content += f"    **Last Attempt:** {timestamp} (SAST)  \n"
+    content += f"    **API Status:** {status_msg}  \n"
+    content += f"    **Post Count:** {len(posts)}\n\n"
 
-    if post_count == 0:
-        content += """
-!!! danger "Empty Result Set"
-    The scraper returned 0 posts from Reddit. This usually means the search query for the specific flair failed or Reddit is rate-limiting the request.
-"""
-    elif not found_any:
-        content += """
-!!! warning "No Matches Found"
-    Posts were found, but none matched the current tracking keywords (LaTeX, Sync, etc.). The community might be discussing new topics!
-"""
+    content += "## 🔍 Raw Debug Output\n"
+    content += "If the table below is empty, this raw data explains why:\n"
+    content += f"```text\n{debug_text}\n```\n\n"
+
+    if posts:
+        content += "## 🚀 Detected Features\n"
+        content += "| Title | Upvotes |\n| :--- | :---: |\n"
+        for post in posts[:10]: # Just show the first 10 for diagnostics
+            content += f"| {post['data']['title']} | {post['data']['score']} |\n"
     else:
-        # Table Header
-        content += "| Feature Group | Community Upvotes | Status |\n"
-        content += "| :--- | :---: | :--- |\n"
-        
-        for feature, score in sorted_data:
-            # Add a status icon based on upvote heat
-            status = ":material-fire: High Demand" if score > 50 else ":material-clock-outline: Pending Review"
-            content += f"| {feature} | {score} | {status} |\n"
+        content += "!!! danger \"Zero Results\"\n    Reddit returned a valid JSON but found no posts matching the query 'Feature'."
 
     return content
 
-# Main Workflow
 if __name__ == "__main__":
-    raw_posts = fetch_starnote_requests()
-    count = len(raw_posts)
-    aggregated_data, matches_found = aggregate_features(raw_posts)
+    posts, status, debug = fetch_starnote_requests()
+    final_md = generate_markdown(posts, status, debug)
     
-    final_markdown = generate_markdown(aggregated_data, count, matches_found)
-    
-    # Ensure the docs directory exists (relevant for local testing)
     os.makedirs('docs', exist_ok=True)
-    
     with open("docs/features.md", "w", encoding="utf-8") as f:
-        f.write(final_markdown)
-        
-    print("Done! features.md has been updated.")
- 
+        f.write(final_md)
