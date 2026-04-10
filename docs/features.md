@@ -1,14 +1,36 @@
 # 🛠️ Wiki Diagnostic Page
 
 !!! info "System Internals"
-    **Last Attempt:** 2026-04-09 21:43:29 (SAST)  
+    **Last Attempt:** 2026-04-10 02:00:45 (SAST)  
     **API Status:** Error: Status Code 403  
     **Post Count:** 0
 
 ## 🔍 Raw Debug Output
 If the table below is empty, this raw data explains why:
 ```text
-<body class=theme-beta><div><style>.theme-light,:root{--rem360:22.5rem;--rem320:20rem;--rem192:12rem;--rem144:9rem;--rem128:8rem;--rem96:6rem;--rem90:5.625rem;--rem88:5.5rem;--rem64:4rem;--rem56:3.5rem;--rem48:3rem;--rem40:2.5rem;--rem36:2.25rem;--rem32:2rem;--rem28:1.75rem;--rem26:1.625rem;--rem24:1.5rem;--rem22:1.375rem;--rem20:1.25rem;--rem18:1.125rem;--rem16:1rem;--rem15:0.9375rem;--rem14:0.875rem;--rem12:0.75rem;--rem10:0.625rem;--rem8:0.5rem;--rem6:0.375rem;--rem4:0.25rem;--rem2:0.125rem;-
+<!doctype html>
+     <html>
+  <head>
+    <title>Blocked</title>
+    <style>
+      body {
+          font: small verdana, arial, helvetica, sans-serif;
+          width: 600px;
+          margin: 0 auto;
+      }
+
+      h1 {
+          height: 40px;
+          background: transparent url(//www.redditstatic.com/reddit.com.header.png) no-repeat scroll top right;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>whoa there, pardner!</h1>
+
+<p>Your request has been blocked due to a network policy.</p>
+
+<p>Try
 ```
 
 !!! danger "Zero Results"
