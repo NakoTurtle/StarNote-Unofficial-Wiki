@@ -46,7 +46,7 @@ plugins:
 nav:
   - Introduction: index.md
   - Tools & Toolbar: tools.md
-  #- Features: features.md
+  - Feature Request Stats: features.md
   #- Other Tools: other-tools.md
 markdown_extensions:
   - admonition
