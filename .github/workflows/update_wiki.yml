@@ -7,16 +7,15 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    # Optional: Opt into Node 24 now to test stability
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v6 # Updated to v6 for Node 24 support
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v6 # Updated to v6 for Node 24 support
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
@@ -29,10 +28,7 @@ jobs:
         run: python scripts/fetch_reddit.py
 
       - name: Deploy MkDocs to GitHub Pages
-        run: |
-          # We skip the 'git commit' and 'git push' entirely to avoid the error.
-          # mkdocs gh-deploy handles its own internal git logic for the website.
-          mkdocs gh-deploy --force
-
-      - name: Deploy MkDocs to GitHub Pages
+        # This command is smart. It takes the docs folder (including the 
+        # features.md your script just made) and pushes it to a HIDDEN 
+        # branch called 'gh-pages' which powers your website.
         run: mkdocs gh-deploy --force
