@@ -3,6 +3,9 @@ on:
   schedule:
     - cron: '0 0 * * *'
   workflow_dispatch:
+  push:
+    paths:
+      - 'data/raw_json/**' # Trigger automatically when you drop a new JSON file
 
 jobs:
   build-and-deploy:
@@ -25,10 +28,10 @@ jobs:
           pip install requests mkdocs-material
 
       - name: Run Reddit Scraper
+        # This creates features.md and most_wanted.md in the runner's memory
         run: python scripts/fetch_reddit.py
 
-      - name: Deploy MkDocs to GitHub Pages
-        # This command is smart. It takes the docs folder (including the 
-        # features.md your script just made) and pushes it to a HIDDEN 
-        # branch called 'gh-pages' which powers your website.
+      - name: Deploy Wiki Website
+        # mkdocs takes the files the script just made and pushes them 
+        # to the live site branch (gh-pages) automatically.
         run: mkdocs gh-deploy --force
