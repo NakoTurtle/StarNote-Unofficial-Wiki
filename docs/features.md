@@ -1,28 +1,41 @@
 # 🚀 Live Feature Tracker
 
-!!! info "Audit Status"
-    **Last Sync:** 2026-04-11 11:40:51 (SAST)  
-    **Unique Posts Analyzed:** 938  
+!!! info "Community Audit Metrics"
+    **Last Sync:** 2026-04-11 11:47:22 (SAST)  
+    **Total Unique Posts Analyzed:** 938  
 
-| Feature Suggestion | Link |
+## 🏆 Most Requested Features
+| Feature Category | Request Count | Priority Status |
+| :--- | :---: | :--- |
+| Cloud Sync / Backup | 59 | 🔥 Trending |
+| Infinite Canvas | 22 | 🔥 Trending |
+| Windows / PC Version | 21 | 🔥 Trending |
+| Hyperlinks | 19 | 🔥 Trending |
+| Dark Mode | 15 | 🔥 Trending |
+| LaTeX / Math Support | 7 | 🔥 Trending |
+
+---
+
+## 📂 Recent Discussions
+| Feature Suggestion | Community Link |
 | :--- | :--- |
-| Feature request : more then 5 colors | [View](https://reddit.com/r/StarNoteApp/comments/1phgnlb/feature_request_more_then_5_colors/) |
-| Synch between iOS and iPad | [View](https://reddit.com/r/StarNoteApp/comments/1ph9g75/synch_between_ios_and_ipad/) |
-| Epub import in darkmode | [View](https://reddit.com/r/StarNoteApp/comments/1ph0vtd/epub_import_in_darkmode/) |
-| WOULD LOVE hyperlinking to improve | [View](https://reddit.com/r/StarNoteApp/comments/1pgsdn7/would_love_hyperlinking_to_improve/) |
-| Please consider | [View](https://reddit.com/r/StarNoteApp/comments/1pgsclk/please_consider/) |
-| Duplicate Pages | [View](https://reddit.com/r/StarNoteApp/comments/1pgl7nr/duplicate_pages/) |
-| Where are the files stored? | [View](https://reddit.com/r/StarNoteApp/comments/1pgb4wt/where_are_the_files_stored/) |
-| Starnote subscription across platforms | [View](https://reddit.com/r/StarNoteApp/comments/1pg8w79/starnote_subscription_across_platforms/) |
-| Can star note sync across different devices? | [View](https://reddit.com/r/StarNoteApp/comments/1pfz2fi/can_star_note_sync_across_different_devices/) |
-| Too many steps to start a daily note | [View](https://reddit.com/r/StarNoteApp/comments/1pfocji/too_many_steps_to_start_a_daily_note/) |
-| Improving Highlight and One-Stroke Line Recognition | [View](https://reddit.com/r/StarNoteApp/comments/1pfm1en/improving_highlight_and_onestroke_line_recognition/) |
-| Feedback and request | [View](https://reddit.com/r/StarNoteApp/comments/1pfi7p5/feedback_and_request/) |
-| A couple of questions about StarNote on Macbook | [View](https://reddit.com/r/StarNoteApp/comments/1pf5tfu/a_couple_of_questions_about_starnote_on_macbook/) |
-| Feature request: Independent adaptive-width toggle for pen vs. highlighter | [View](https://reddit.com/r/StarNoteApp/comments/1peumov/feature_request_independent_adaptivewidth_toggle/) |
-| Scribe to erase feature und the future | [View](https://reddit.com/r/StarNoteApp/comments/1peu2ly/scribe_to_erase_feature_und_the_future/) |
-| Copy page... but how to paste it? | [View](https://reddit.com/r/StarNoteApp/comments/1pe8wwp/copy_page_but_how_to_paste_it/) |
-| Marking text | [View](https://reddit.com/r/StarNoteApp/comments/1pe743i/marking_text/) |
-| Marking text | [View](https://reddit.com/r/StarNoteApp/comments/1pe73z9/marking_text/) |
-| Zoom Feature in handwriting | [View](https://reddit.com/r/StarNoteApp/comments/1pe5o2b/zoom_feature_in_handwriting/) |
-| Improve Highlight and One-Stroke Line | [View](https://reddit.com/r/StarNoteApp/comments/1pe5fpt/improve_highlight_and_onestroke_line/) |
+| StarNote: Will the Windows app be a companion or a separate license? | [View on Reddit](https://reddit.com/r/StarNoteApp/comments/1shqryp/starnote_will_the_windows_app_be_a_companion_or_a/) |
+| Problem in Starnote app on SYNC between ipad and andoroid | [View on Reddit](https://reddit.com/r/StarNoteApp/comments/1shlb99/problem_in_starnote_app_on_sync_between_ipad_and/) |
+| Inquiry about future pricings. | [View on Reddit](https://reddit.com/r/StarNoteApp/comments/1shl78t/inquiry_about_future_pricings/) |
+| Feature suggestions for A better Experience for Pro Users | [View on Reddit](https://reddit.com/r/StarNoteApp/comments/1shir2e/feature_suggestions_for_a_better_experience_for/) |
+| Free version | [View on Reddit](https://reddit.com/r/StarNoteApp/comments/1sh7k46/free_version/) |
+| I can't wait to see the new "Developer Diary"! | [View on Reddit](https://reddit.com/r/StarNoteApp/comments/1sgym54/i_cant_wait_to_see_the_new_developer_diary/) |
+| From Kathmandu with Love: Empowering a future doctor’s journey, one note at a time. | [View on Reddit](https://reddit.com/r/StarNoteApp/comments/1sgmqmt/from_kathmandu_with_love_empowering_a_future/) |
+| Screenshot tool and page margins | [View on Reddit](https://reddit.com/r/StarNoteApp/comments/1sgl3s0/screenshot_tool_and_page_margins/) |
+| Inquiry About Q2 Release and Handwriting Features | [View on Reddit](https://reddit.com/r/StarNoteApp/comments/1sgfdkq/inquiry_about_q2_release_and_handwriting_features/) |
+| Inability to create text in StarNote's ipad app using a Macbook | [View on Reddit](https://reddit.com/r/StarNoteApp/comments/1sfu5dw/inability_to_create_text_in_starnotes_ipad_app/) |
+| Fullscreen and Document Changing | [View on Reddit](https://reddit.com/r/StarNoteApp/comments/1sfrk4d/fullscreen_and_document_changing/) |
+| Floating Pen Box | [View on Reddit](https://reddit.com/r/StarNoteApp/comments/1sfe4s1/floating_pen_box/) |
+| Fav Pen Box Bug | [View on Reddit](https://reddit.com/r/StarNoteApp/comments/1sf8ggq/fav_pen_box_bug/) |
+| Two-finger Panning | [View on Reddit](https://reddit.com/r/StarNoteApp/comments/1seyqxi/twofinger_panning/) |
+| Features request | [View on Reddit](https://reddit.com/r/StarNoteApp/comments/1sevx5f/features_request/) |
+| Request for color pallete | [View on Reddit](https://reddit.com/r/StarNoteApp/comments/1seo9yb/request_for_color_pallete/) |
+| Tool box features | [View on Reddit](https://reddit.com/r/StarNoteApp/comments/1sel59y/tool_box_features/) |
+| Swipe up or down on Focus Pen | [View on Reddit](https://reddit.com/r/StarNoteApp/comments/1sel567/swipe_up_or_down_on_focus_pen/) |
+| Feature requests or help if I've just missed them | [View on Reddit](https://reddit.com/r/StarNoteApp/comments/1se35cr/feature_requests_or_help_if_ive_just_missed_them/) |
+| Make horizontal/vertical lock for separate tabs/documents | [View on Reddit](https://reddit.com/r/StarNoteApp/comments/1sdzkrx/make_horizontalvertical_lock_for_separate/) |
