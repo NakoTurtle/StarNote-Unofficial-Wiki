@@ -28,29 +28,11 @@ jobs:
       - name: Run Reddit Scraper
         run: python scripts/fetch_reddit.py
 
-      - name: Commit and Push Data Artifacts
+      - name: Deploy MkDocs to GitHub Pages
         run: |
-          git config --global user.name 'StarNote-Wiki-Bot'
-          git config --global user.email 'actions@github.com'
-          
-          # 1. Force the bot to sync its timeline with yours
-          git fetch origin main
-          git reset --mixed origin/main
-          
-          # 2. Re-stage the files the Python script just created
-          git add docs/features.md data/cleaned_feature_data.csv
-          
-          # 3. Only commit if there are actually new changes
-          if ! git diff --cached --quiet; then
-            git commit -m "Auto-update: Syncing manual JSON drop"
-            # 4. Use --rebase to ensure a clean push
-            git pull --rebase origin main
-            git push origin main
-          else
-            echo "No changes detected. skipping."
-          fi
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # We skip the 'git commit' and 'git push' entirely to avoid the error.
+          # mkdocs gh-deploy handles its own internal git logic for the website.
+          mkdocs gh-deploy --force
 
       - name: Deploy MkDocs to GitHub Pages
         run: mkdocs gh-deploy --force
