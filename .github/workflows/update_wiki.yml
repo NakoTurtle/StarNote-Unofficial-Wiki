@@ -33,15 +33,22 @@ jobs:
           git config --global user.name 'StarNote-Wiki-Bot'
           git config --global user.email 'actions@github.com'
           
-          # Stage every file that might have changed
+          # Stage the changes
           git add docs/features.md data/cleaned_feature_data.csv
           
-          # Check if there are actual changes to commit
+          # Only proceed if there are changes
           if ! git diff --cached --quiet; then
             git commit -m "Auto-update: Manual JSON Audit"
-            # Rebase ensures we are on top of any manual changes you made
-            git pull --rebase origin main
-            git push
+            
+            # 1. Fetch latest changes from the server
+            git fetch origin main
+            
+            # 2. Rebase our commit on top of the server's version
+            # This integrates your manual JSON drop with the bot's results
+            git rebase origin/main
+            
+            # 3. Push the combined work
+            git push origin main
           else
             echo "No changes to commit. Skipping."
           fi
