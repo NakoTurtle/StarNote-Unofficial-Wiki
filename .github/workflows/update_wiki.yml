@@ -28,13 +28,21 @@ jobs:
       - name: Run Reddit Scraper
         run: python scripts/fetch_reddit.py
 
-      - name: Commit Updated Features
+      - name: Commit and Push Data Artifacts
         run: |
           git config --global user.name 'StarNote-Wiki-Bot'
           git config --global user.email 'actions@github.com'
-          git add docs/features.md
-          # Only commit if the file actually changed
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update: Latest Reddit Metrics" && git push)
+          
+          # Stage the new CSV and the updated markdown files
+          git add docs/features.md docs/most_wanted.md data/cleaned_feature_data.csv
+          
+          # Check if there are any staged changes to commit
+          if ! git diff --cached --quiet; then
+            git commit -m "Auto-update: Audit results and CSV artifact"
+            git push
+          else
+            echo "No changes detected in data or docs. Skipping commit."
+          fi
 
       - name: Deploy MkDocs to GitHub Pages
         run: mkdocs gh-deploy --force
