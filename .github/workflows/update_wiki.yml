@@ -33,19 +33,21 @@ jobs:
           git config --global user.name 'StarNote-Wiki-Bot'
           git config --global user.email 'actions@github.com'
           
-          # We stage the features.md and the new CSV
+          # 1. Force the bot to sync its timeline with yours
+          git fetch origin main
+          git reset --mixed origin/main
+          
+          # 2. Re-stage the files the Python script just created
           git add docs/features.md data/cleaned_feature_data.csv
           
-          # Check if there are changes
+          # 3. Only commit if there are actually new changes
           if ! git diff --cached --quiet; then
             git commit -m "Auto-update: Syncing manual JSON drop"
-            
-            # This is the line that fixes the [rejected] error!
+            # 4. Use --rebase to ensure a clean push
             git pull --rebase origin main
-            
             git push origin main
           else
-            echo "No changes detected. Skipping commit."
+            echo "No changes detected. skipping."
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
