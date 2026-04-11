@@ -33,16 +33,20 @@ jobs:
           git config --global user.name 'StarNote-Wiki-Bot'
           git config --global user.email 'actions@github.com'
           
-          # Stage the new CSV and the updated markdown files
-          git add docs/features.md docs/most_wanted.md data/cleaned_feature_data.csv
+          # Stage every file that might have changed
+          git add docs/features.md data/cleaned_feature_data.csv
           
-          # Check if there are any staged changes to commit
+          # Check if there are actual changes to commit
           if ! git diff --cached --quiet; then
-            git commit -m "Auto-update: Audit results and CSV artifact"
+            git commit -m "Auto-update: Manual JSON Audit"
+            # Rebase ensures we are on top of any manual changes you made
+            git pull --rebase origin main
             git push
           else
-            echo "No changes detected in data or docs. Skipping commit."
+            echo "No changes to commit. Skipping."
           fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy MkDocs to GitHub Pages
         run: mkdocs gh-deploy --force
