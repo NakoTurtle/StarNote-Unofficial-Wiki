@@ -1,9 +1,9 @@
 # ☁️ Cloud Backup & Data Safety
 
-Ensuring your notes are backed up is critical for any engineering workflow. While **Real-Time Live Syncing** (device-to-device instant updates) is not yet a feature of StarNote, you can protect your data using the built-in **Cloud Backup** system.
+Ensuring your notes are backed up is critical for any user. While **Real-Time Live Syncing** (device-to-device instant updates) is not yet a feature of StarNote, you can protect your data using the built-in **Cloud Backup** system.
 
 !!! warning "Live Sync vs. Cloud Backup"
-    StarNote does **not** currently support live syncing. If you edit a note on your iPad, it will not automatically appear on your Android phone in real-time. You must manually "Restore" from a backup to move data between devices.
+    StarNote does **not** currently support live syncing. If you edit a note on your device, it will not automatically appear on your other devices in real-time. You must manually "Restore" from a backup to move data between devices.
 
 ---
 
@@ -35,14 +35,14 @@ StarNote allows you to link your favorite cloud provider to store snapshots of y
 
 ## 📂 Moving Data Between Devices
 
-If you are switching from an iPad to an Android tablet (or vice versa), follow this "Snapshot" method:
+If you are switching from one device to another, follow this "Snapshot" method:
 
 1.  **On the Original Device:** Go to Cloud Backup and tap **Upload Backup**.
 2.  **On the New Device:** Sign in to the *same* cloud provider and account.
 3.  **Restore:** Tap **Download & Restore**.
  
     !!! warning "Warning"
-        This will create duplicates any existing notes on the new device in addition to the versions from the cloud. If you want to avoid duplicates and you know what you are doing, you can select and delete all of your notes before restoring a backup to simply have a single copy of the backed up notes. Note that any unsaved changes will be lost. Backups cannot be merged. If you want to keep a note that's not in the backup being restored, simply do not delete it.
+        This will create **duplicates** any existing notes on the new device in addition to the versions from the cloud. If you want to avoid duplicates and you know what you are doing, you can select and delete all of your notes before restoring a backup to simply have a single copy of the backed up notes. **Note that any changes that are not backed up will be lost in this way!** Backups cannot be merged. If you want to keep a note that's not in the backup being restored, simply do not delete it.
 
 ---
 
@@ -69,6 +69,9 @@ If you prefer not to use the cloud, or if you want to archive a specific module'
 
 **Can I sync my notes to my Windows PC?**
 Not yet. Because there is no native Windows app, you can only view your notes on PC by exporting them as **PDFs** and uploading them to your cloud drive or transferring them manually.
+
+**Can I sync my notes to my other devices?**
+StarNote does **not** currently support live syncing. If you edit a note on your device, it will not automatically appear on your other devices in real-time. You must manually "Restore" from a backup to move data between devices. While **Real-Time Live Syncing** (device-to-device instant updates) is not yet a feature of StarNote, you can manually transfer your data using the built-in **Cloud Backup** system.
 
 **How often should I backup?**
 The more often the better. We recommend using the **Auto-Backup** setting.
