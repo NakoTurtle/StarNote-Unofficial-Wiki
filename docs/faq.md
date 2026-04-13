@@ -38,12 +38,22 @@ The canvas expands automatically as you write near the edges. Use a **two-finger
 ## ☁️ Sync & Privacy
 
 ### **Where are my notes stored?**
+By default, notes are stored **locally** on your device. If you enable [Cloud Backup](sync.md#Setting-Up-Automated-Backups) (OneDrive or Google Drive), a copy is encrypted and uploaded to your chosen provider.
 
-By default, notes are stored **locally** on your device. If you enable Cloud Sync (OneDrive or Google Drive), a copy is encrypted and uploaded to your chosen provider.
+### **Can I sync my notes to my Windows PC?**
+Not yet. Because there is no native Windows app, you can only view your notes on PC by exporting them as **PDFs** and uploading them to your cloud drive or transferring them manually.
 
-### **Can I share between an iPad and an Android tablet?**
+### **Can I sync my notes to my other devices?**
+StarNote does **not** currently support live syncing. If you edit a note on your device, it will not automatically appear on your other devices in real-time. You must manually "Restore" from a backup to move data between devices. While **Real-Time Live Syncing** (device-to-device instant updates) is not yet a feature of StarNote, you can manually transfer your data using the built-in **Cloud Backup** system.
 
-Yes! Simply log in with the same account on both devices and import from cloud backup or a backup file to share notes.
+### **How often should I backup?**
+The more often the better. We recommend using the [**Auto-Backup**](sync.md#Setting-Up-Automated-Backups) setting.
+
+### **What happens if I delete the app?**
+If you haven't set up a [Cloud Backup](sync.md#Setting-Up-Automated-Backups) or exported your files manually, **your notes will be permanently lost**. Always ensure your backup screen stays open until the status says "Success" before closing the app.
+
+### **Can I share a pro account between an iPad and an Android tablet?**
+Yes! Simply log in with the same account and sign in method on both devices to sync your pro status. No need to pay more than once. Click [here](sync.md#Cloud-Backup-&-Data-Safety) to see how to backup or move notes between devices.
 
 -----
 
