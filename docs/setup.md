@@ -15,6 +15,9 @@ By default, notes are stored locally on your device. To access them across devic
  2. Select and bind your preferred provider (OneDrive or Google Drive).
  3. Toggle **Automatic backup** to ON.
 
+!!! info "Importnant!"
+    Cloud backup is different from live syncing, which is not yet implemented. Live syncing is still in development and is expected to launch late Q2.
+
 ### **Stylus & Pencil Optimization**
 If you are using an Apple Pencil, S-Pen, or third-party stylus, calibrate it for the best handwriting experience:
 
