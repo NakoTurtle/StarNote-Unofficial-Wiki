@@ -4,7 +4,7 @@ Your comprehensive guide to mastering **StarNote**—the vector-based notebook d
 
 -----
 
-!!! warning "Important"
+???+ warning "Important"
     This wiki was not made by the developers of StarNote and still a work in progrees so it may not be completely accurate!
 
 ## 🚀 What is StarNote?
