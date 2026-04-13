@@ -44,10 +44,24 @@ extra_css:
 plugins:
 - search
 nav:
-  - Introduction: index.md
-  - Tools & Toolbar: tools.md
-  - Feature Request Stats: features.md
-  #- Other Tools: other-tools.md
+  - Home: index.md
+  - Getting Started:
+      - Quick Start: setup.md
+      - FAQ: faq.md
+  - Features:
+      - Canvas Basics: canvas.md
+      - Organization: folders.md
+      - Handwriting to Text: ocr.md
+  - Community Insights:
+      - Feature Tracker: features.md
+      - Most Requested: most_wanted.md
+      - Top Discussions: deep_dives.md
+  - Technical:
+      - Hardware Support: hardware.md
+      - Sync & Backups: sync.md
+  - Wiki Metadata:
+    #  - Automation Guide: automation.md
+      - Audit CSV: data/cleaned_feature_data.csv
 markdown_extensions:
   - admonition
   - pymdownx.details
