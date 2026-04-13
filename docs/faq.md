@@ -78,4 +78,4 @@ Ultimately, the developers will say when features will release, but you can see 
 -----
 
 !!! tip "**Tip:**"
-    If your question isn't answered here, check the **[Setup Guide](setup.md){ data-preview }** for initial configuration tips or visit the [**StarNote Discord Server**](https://discord.com/invite/2kZFvu8j3c){ data-preview } or the [**r/StarNoteApp**](https://www.reddit.com/r/StarNoteApp/){ data-preview } subreddit for real-time help.
+    If your question isn't answered here, check the **[Setup Guide](setup.md)** for initial configuration tips or visit the [**StarNote Discord Server**](https://discord.com/invite/2kZFvu8j3c) or the [**r/StarNoteApp**](https://www.reddit.com/r/StarNoteApp/) subreddit for real-time help.
