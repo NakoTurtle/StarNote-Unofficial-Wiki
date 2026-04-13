@@ -82,6 +82,8 @@ markdown_extensions:
   - md_in_html
   - pymdownx.tabbed:
       alternate_style: true
+  - toc:
+      toc_depth: 2
 
 
 
