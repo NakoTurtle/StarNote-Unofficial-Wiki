@@ -39,9 +39,10 @@ If you are switching from an iPad to an Android tablet (or vice versa), follow t
 
 1.  **On the Original Device:** Go to Cloud Backup and tap **Upload Backup**.
 2.  **On the New Device:** Sign in to the *same* cloud provider and account.
-3.  **Restore:** Tap **Download & Restore**. 
+3.  **Restore:** Tap **Download & Restore**.
+ 
     !!! warning "Warning"
-        This will create duplicates any existing notes on the new device in addition to the versions from the cloud. 
+        This will create duplicates any existing notes on the new device in addition to the versions from the cloud. If you want to avoid duplicates and you know what you are doing, you can select and delete all of your notes before restoring a backup to simply have a single copy of the backed up notes. Note that any unsaved changes will be lost. Backups cannot be merged. If you want to keep a note that's not in the backup being restored, simply do not delete it.
 
 ---
 
