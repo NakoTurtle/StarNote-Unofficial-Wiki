@@ -48,20 +48,27 @@ nav:
   - Getting Started:
       - Quick Start: setup.md
       - FAQ: faq.md
-  - Features:
-      - Canvas Basics: canvas.md
-      - Organization: folders.md
-      - Handwriting to Text: ocr.md
-  - Community Insights:
+  - Study Toolkit (PDFs):
+      - Importing Documents: pdf_import.md
+      - Annotation & Expansion: pdf_tools.md
+      - Smart Inversion (Dark Mode): dark_mode.md
+      - Exporting Notes: pdf_export.md
+  - Creation Tools:
+      - Pen & Writing: pens.md
+      - Smart Tables: tables.md
+      - Shapes & Geometry: shapes.md
+  - Workspace Editing:
+      - Lasso & Selection: lasso.md
+      - Canvas Backgrounds: templates.md
+  - Management:
+      - Cloud Backup & Sync: sync.md
+      - Local File Backups: backups.md
+  - Community Data:
       - Feature Tracker: features.md
-      - Most Requested: most_wanted.md
-      - Top Discussions: deep_dives.md
+      - Most Wanted (LaTeX/OCR): most_wanted.md
   - Technical:
-      - Hardware Support: hardware.md
-      - Sync & Backups: sync.md
-  - Wiki Metadata:
-    #  - Automation Guide: automation.md
-      - Audit CSV: data/cleaned_feature_data.csv
+      - Hardware Guide: hardware.md
+      - Known Limitations: limitations.md
 markdown_extensions:
   - admonition
   - pymdownx.details
