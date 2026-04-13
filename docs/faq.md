@@ -67,5 +67,5 @@ Ultimately, the developers will say when features will release, but you can see 
 
 -----
 
-!!! tip "💡 **Tip:**"
+!!! tip "**Tip:**"
     If your question isn't answered here, check the **[Setup Guide](setup.md)** for initial configuration tips or visit the [**StarNote Discord Server**](https://discord.com/invite/2kZFvu8j3c) or the [**r/StarNoteApp**](https://www.reddit.com/r/StarNoteApp/) subreddit for real-time help.
