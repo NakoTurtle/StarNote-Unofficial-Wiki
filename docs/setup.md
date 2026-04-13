@@ -2,8 +2,8 @@
 Welcome to the community! This guide will walk you through setting up StarNote for the first time, from installation to optimizing your workflow.
 ## 1. Installation
 StarNote is currently available for mobile and tablet devices. Use the links below to ensure you are downloading the official version:
- * **iOS / iPadOS:** Download on the [App Store] (https://apps.apple.com/us/app/starnote-handwriting-pdf/id6751570915) 
- * **Android:** Download on [Google Play] (https://play.google.com/store/apps/details?id=com.onyx.galaxy.global.note) or use the direct apk download on their [website](https://site.starnote.ai/download). 
+ * **iOS / iPadOS:** Download on the [App Store](https://apps.apple.com/us/app/starnote-handwriting-pdf/id6751570915) 
+ * **Android:** Download on [Google Play](https://play.google.com/store/apps/details?id=com.onyx.galaxy.global.note) or use the direct apk download on their [website](https://site.starnote.ai/download). 
 ## 2. Initial Configuration
 When you first open the app, we recommend configuring these three core settings to ensure your data is safe and your experience is smooth.
 ### **Cloud Backup**
