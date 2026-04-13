@@ -41,6 +41,8 @@ theme:
     - search.share
     - content.code.copy
     - content.tooltips
+    - navigation.instant
+    - navigation.preview
 extra_css:
   - stylesheets/extra.css
 plugins:
