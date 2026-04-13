@@ -43,4 +43,4 @@ Since StarNote is evolving rapidly based on community feedback, check the **Feat
 If you run into issues during setup:
 
  * Check our [**FAQ**](faq.md) for common troubleshooting steps.
- * Visit the [**r/StarNoteApp**](https://www.reddit.com/r/StarNoteApp/) subreddit to ask the community for advice.
+ * Visit the [**StarNote Discord Server**](https://discord.com/invite/2kZFvu8j3c) or the [**r/StarNoteApp**](https://www.reddit.com/r/StarNoteApp/) subreddit to ask the community for advice.
