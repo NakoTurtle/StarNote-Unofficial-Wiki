@@ -4,6 +4,9 @@ Your comprehensive guide to mastering **StarNote**—the vector-based notebook d
 
 -----
 
+!!! warning "Important"
+    This wiki was not made by the developers of StarNote and still a work in progrees so it may not be completely accurate!
+
 ## 🚀 What is StarNote?
 
 StarNote is a high-performance digital notebook that prioritizes a **subscription-free** experience without compromising on pro-level tools. Built on a proprietary ink engine, it offers:
