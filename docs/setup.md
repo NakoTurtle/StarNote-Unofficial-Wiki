@@ -31,5 +31,5 @@ To get the most out of the app's infinite canvas, keep these basic gestures in m
 Since StarNote is evolving rapidly based on community feedback, check the **Feature Tracker** to see what new tools are currently being developed or requested by users like you.
 ### **Need Help?**
 If you run into issues during setup:
- * Check our **FAQ** for common troubleshooting steps.
- * Visit the **r/StarNoteApp** subreddit to ask the community for advice.
+ * Check our [**FAQ**](faq.md) for common troubleshooting steps.
+ * Visit the [**r/StarNoteApp**](https://www.reddit.com/r/StarNoteApp/) subreddit to ask the community for advice.
