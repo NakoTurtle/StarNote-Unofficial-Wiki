@@ -48,7 +48,6 @@ extra_css:
 plugins:
 - search
 - markmap
-  base_path: docs
 nav:
   - Home: index.md
   - Getting Started:
