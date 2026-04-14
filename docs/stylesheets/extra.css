@@ -22,6 +22,19 @@ Light Mode: #FBFBFB
   --md-default-bg-color:        #000000;
 }
 
-.markmap svg text {
+/* Target the Markmap container specifically */
+.markmap > svg {
+  background: transparent !important;
+}
+
+/* Force Markmap to use the Material Theme's text color variables */
+.markmap-node-text, 
+.markmap-node-text-container {
   fill: var(--md-typeset-color) !important;
+  color: var(--md-typeset-color) !important;
+}
+
+/* Fix the 'ForeignObject' text which often stays black */
+.markmap-foreign-object div {
+  color: var(--md-typeset-color) !important;
 }
