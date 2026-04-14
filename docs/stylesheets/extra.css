@@ -8,11 +8,13 @@ Light Mode: #FBFBFB
 [data-md-color-scheme="default"] {
   --md-primary-fg-color:        #1891B5;
   --md-default-bg-color:        #FBFBFB;
+  --markmap-circle-fill: #ffffff;
 }
 
 [data-md-color-scheme="slate"] {
   --md-primary-fg-color:        #1891B5;
   --md-default-bg-color:        #2D2D2D;
+  --markmap-circle-fill: #2e323a;
 }
 
 [data-md-color-scheme="starnote-black"] {
@@ -20,17 +22,6 @@ Light Mode: #FBFBFB
   --md-default-bg-color:        #000000;
 }
 
-/* Ensure Markmap text inherits the theme's text color */
 .markmap svg text {
   fill: var(--md-typeset-color) !important;
-}
-
-/* Light Mode specific tweaks */
-[data-md-color-scheme="default"] .markmap {
-  --markmap-circle-fill: #ffffff;
-}
-
-/* Dark Mode specific tweaks */
-[data-md-color-scheme="slate"] .markmap {
-  --markmap-circle-fill: #2e323a;
 }
