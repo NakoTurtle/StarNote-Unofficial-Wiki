@@ -1,3 +1,11 @@
+---
+markmap:
+  colorFreezeLevel: 2
+  style: |
+    .markmap-node-text {
+      fill: currentColor;
+    }
+---
 # 🚀 Feature Tracker
 
 ```markmap
