@@ -38,3 +38,7 @@ Light Mode: #FBFBFB
 .markmap-foreign-object div {
   color: var(--md-typeset-color) !important;
 }
+
+.markmap text {
+  fill: #333 !important; /* Changes node text color */
+}
