@@ -8,13 +8,11 @@ Light Mode: #FBFBFB
 [data-md-color-scheme="default"] {
   --md-primary-fg-color:        #1891B5;
   --md-default-bg-color:        #FBFBFB;
-  --markmap-circle-fill: #ffffff;
 }
 
 [data-md-color-scheme="slate"] {
   --md-primary-fg-color:        #1891B5;
   --md-default-bg-color:        #2D2D2D;
-  --markmap-circle-fill: #2e323a;
 }
 
 [data-md-color-scheme="starnote-black"] {
@@ -22,23 +20,12 @@ Light Mode: #FBFBFB
   --md-default-bg-color:        #000000;
 }
 
-/* Target the Markmap container specifically */
-.markmap > svg {
-  background: transparent !important;
+/* Styles for Dark Mode (Slate theme in Material) */
+[data-md-color-scheme="slate"] .markmap-node text {
+  fill: #ffffff !important; /* Forces text to white in dark mode */
 }
 
-/* Force Markmap to use the Material Theme's text color variables */
-.markmap-node-text, 
-.markmap-node-text-container {
-  fill: var(--md-typeset-color) !important;
-  color: var(--md-typeset-color) !important;
-}
-
-/* Fix the 'ForeignObject' text which often stays black */
-.markmap-foreign-object div {
-  color: var(--md-typeset-color) !important;
-}
-
-.markmap text {
-  fill: #333 !important; /* Changes node text color */
+/* Styles for Light Mode (Default theme) */
+[data-md-color-scheme="default"] .markmap-node text {
+  fill: #000000 !important; /* Forces text to black in light mode */
 }
