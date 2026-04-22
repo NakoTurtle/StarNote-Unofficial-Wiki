@@ -41,7 +41,7 @@ Select a pen type to see its specific characteristics and best-use cases for you
     ---
     Draw any basic shape and **hold** at the end of the stroke. StarNote will snap the line into a perfect geometric vector.
 
--   :material- some-stroke:{ .lg .middle } __Pressure Sensitivity__
+-   :material-some-stroke:{ .lg .middle } __Pressure Sensitivity__
     ---
     Adjust the sensitivity curve in **Settings > Stylus**. (Applicable to Fountain Pen and Pencil).
 
