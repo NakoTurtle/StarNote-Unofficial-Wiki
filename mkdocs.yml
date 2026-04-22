@@ -70,7 +70,7 @@ nav:
       - Local File Backups: backups.md
   - Community Data:
       - Feature Tracker: features.md
-      - Most Wanted (LaTeX/OCR): most_wanted.md
+      - Most Wanted: most_wanted.md
   - Technical:
       - Hardware Guide: hardware.md
       - Known Limitations: limitations.md
