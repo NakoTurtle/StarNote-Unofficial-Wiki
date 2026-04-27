@@ -2,54 +2,57 @@
 markmap:
   colorFreezeLevel: 2
   style: |
-    .markmap-node-text {
-      fill: currentColor;
-    }
+    .markmap-node-text { fill: var(--md-typeset-color); }
+    .markmap-node-circle { stroke: var(--md-primary-fg-color); }
+    .markmap-link { stroke: var(--md-primary-fg-color--light); }
 ---
 # 🚀 Feature Tracker
 
 ```markmap
-# 🧠 StarNote Feature Ecosystem
+# 🧠 StarNote Feature Ecosystem (Community Audit - April 2026)
 
-## 🎨 UI & Workspace
-* **Customization**
-    * `High Demand` **Scrollable Color Palettes**
-    * Individual Page Themes (Dark/Light per page)
-    * Custom Toolbar Anchoring (Top/Bottom/Sides)
-* **Navigation**
-    * Tabbed Document View (Multi-file switching)
-    * **Minimap** for Infinite Canvas navigation
-    * Page Bookmarking & Hyperlinking
+## 🚀 STEM & Engineering (High Priority)
+* 🔴 **LaTeX / Math Formula Support**
+    * *Status: Critical Demand*
+    * Inline equation rendering
+    * Math-to-Text conversion
+* 🔴 **OCR & Handwriting Search**
+    * *Status: Critical Demand*
+    * Global search for handwritten notes
+    * Exporting OCR data to PDF
+* **Advanced Diagramming**
+    * Built-in Unit Conversion tool
+    * Function Plotting (2D/3D)
+    * `New` Engineering Symbol Libraries
 
-## 📝 Note-Taking & Tools
-* **Input Engine**
-    * `Rank 1` 🔴 **LaTeX / Math Formula Support**
-    * `Rank 2` 🔴 **OCR & Handwriting Search**
-    * Audio-Handwriting Synchronization (Lecture Recording)
-* **Pen & Eraser**
-    * Precision Eraser (Pixel-based vs. Stroke-based)
-    * Custom Brush Pressure Curves
-    * "Laser Pointer" mode for presentations
-* **Geometry & Layout**
-    * **True Snap-to-Grid** (for objects and lines)
-    * Unit Conversion Tool (integrated calculator)
-    * **Object Grouping** & Layer Locking
+## 📝 Editing & Tools
+* **Vector Manipulation**
+    * 🟠 **Object Grouping** (Merge multiple strokes)
+    * 🟠 **Layer Management** (Rename, Lock, Hide layers)
+    * **True Snap-to-Grid** for vectors
+* **Writing Polish**
+    * 🟢 **Scrollable Color Palettes**
+    * "Laser Pointer" fade-time customization
+    * Multi-Stroke Eraser logic
 
-## 📂 Infrastructure & Data
+## 📂 Infrastructure & Access
 * **Synchronization**
-    * `Rank 7` 🟠 **Real-Time Cross-Platform Sync**
-    * Web-Based "Read Only" Viewer
-    * Auto-Conflict Resolution for Cloud Backups
-* **Compatibility**
-    * **Native Windows App**
-    * Native Linux/Desktop Support
-    * SVG Export (for high-fidelity engineering reports)
+    * 🟠 **Real-Time Cross-Platform Sync**
+    * Web-Based "Read Only" Document Viewer
+    * Auto-Conflict Resolution (Mobile/Tablet)
+* **Platforms**
+    * 🟠 **Native Windows App**
+    * Native Linux / Desktop Client
+* **Data Security**
+    * Biometric Folder Locking
+    * WebDAV / Self-Hosted Backup support
 
-## ⚙️ Settings & Performance
-* **Privacy**
-    * Biometric Lock (FaceID/Fingerprint) for specific notebooks
-    * Self-Hosted Sync (WebDAV support)
-* **Optimization**
-    * Low-Latency Mode for older hardware
-    * Palm Rejection Sensitivity Sliders
+## 🎨 User Experience (UX)
+* **Customization**
+    * Individual Page Theme toggles
+    * **Minimap** for Infinite Canvas navigation
+    * Custom Toolbar Anchoring (L/R/Bottom)
+* **Organization**
+    * Tabbed Multi-File switching
+    * Notebook Tagging system
 ```
