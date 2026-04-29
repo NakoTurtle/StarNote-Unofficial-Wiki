@@ -29,3 +29,8 @@ Light Mode: #FBFBFB
 [data-md-color-scheme="default"] .markmap-node text {
   fill: #000000 !important; /* Forces text to black in light mode */
 }
+
+.ethical-ads {
+    display: none !important;
+}
+
