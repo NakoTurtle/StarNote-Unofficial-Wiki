@@ -89,6 +89,9 @@ markdown_extensions:
       toc_depth: 2
 extra_javascript:
   - javascripts/markmap-force-dark.js
+extra:
+  generator: false
+
  
 
 
