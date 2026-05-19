@@ -30,7 +30,7 @@ jobs:
           # Force create the directory structure if it's missing
           os.makedirs('docs', exist_ok=True)
           
-          url = 'YOUR_GOOGLE_SHEETS_CSV_LINK_HERE'
+          url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQtiBakTflkiKuB5evW4VyLPjx6AVuchwgVEPd8dHXpXNtOuEXyXH7kf5kXxx_v-BkwpvpU8m3aDFta/pub?gid=0&single=true&output=csv'
           df = pd.read_csv(url)
           
           # 1. Clean column names to strip out accidental trailing spaces
