@@ -30,7 +30,7 @@ jobs:
           # Force create the directory structure if it's missing in the container
           os.makedirs('docs', exist_ok=True)
           
-          url = 'PASTE_YOUR_COPIED_GOOGLE_SHEETS_CSV_LINK_HERE'
+          url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQtiBakTflkiKuB5evW4VyLPjx6AVuchwgVEPd8dHXpXNtOuEXyXH7kf5kXxx_v-BkwpvpU8m3aDFta/pub?gid=0&single=true&output=csv'
           df = pd.read_csv(url)
           
           # Strips out internal data, grabbing the exact public columns
