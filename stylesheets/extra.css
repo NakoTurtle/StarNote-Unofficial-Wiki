@@ -1,0 +1,36 @@
+/* Starnote Theme Colors:
+Primary: #1891B5
+Secondary: #96D4DB
+Darker Secondary: #527386
+Dark Mode: #212121/#2D2D2D
+Light Mode: #FBFBFB
+*/
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        #1891B5;
+  --md-default-bg-color:        #FBFBFB;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #1891B5;
+  --md-default-bg-color:        #2D2D2D;
+}
+
+[data-md-color-scheme="starnote-black"] {
+  --md-primary-fg-color:        #1891B5;
+  --md-default-bg-color:        #000000;
+}
+
+/* Styles for Dark Mode (Slate theme in Material) */
+[data-md-color-scheme="slate"] .markmap-node text {
+  fill: #ffffff !important; /* Forces text to white in dark mode */
+}
+
+/* Styles for Light Mode (Default theme) */
+[data-md-color-scheme="default"] .markmap-node text {
+  fill: #000000 !important; /* Forces text to black in light mode */
+}
+
+.ethical-ads {
+    display: none !important;
+}
+
