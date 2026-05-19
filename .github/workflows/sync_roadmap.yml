@@ -1,0 +1,40 @@
+name: Live Roadmap Sync
+
+on:
+  schedule:
+    - cron: '0 2 * * *' # Automatically runs every night at 2:00 AM
+  workflow_dispatch: # Gives you a button in GitHub to run it instantly whenever you want
+
+jobs:
+  sync-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Fetch and Filter Columns
+        run: |
+          pip install pandas
+          python -c "
+          import pandas as pd
+          # Paste your published Google Sheets CSV link below
+          url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQtiBakTflkiKuB5evW4VyLPjx6AVuchwgVEPd8dHXpXNtOuEXyXH7kf5kXxx_v-BkwpvpU8m3aDFta/pub?gid=0&single=true&output=csv'
+          df = pd.read_csv(url)
+          
+          # Strips out internal data, matching your exact column names
+          public_columns = ['Feature Request', 'Request Platform(s)', 'Category', 'Status', 'Update Implemented']
+          filtered_df = df[public_columns]
+          
+          # Saves it cleanly straight into your MkDocs data folder
+          filtered_df.to_csv('docs/roadmap.csv', index=False)
+          "
+
+      - name: Deploy Updated Wiki Live
+        run: |
+          pip install mkdocs-material mkdocs-table-reader-plugin
+          mkdocs gh-deploy --force
