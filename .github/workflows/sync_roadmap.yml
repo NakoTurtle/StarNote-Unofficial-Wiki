@@ -2,11 +2,14 @@ name: Live Roadmap Sync
 
 on:
   schedule:
-    - cron: '0 2 * * *' # Automatically runs every night at 2:00 AM
-  workflow_dispatch: # Gives you a button in GitHub to run it instantly whenever you want
+    - cron: '0 2 * * *' # Runs automatically every night at 2:00 AM
+  workflow_dispatch: # Allows you to manually click a button to force an instant update
+
+permissions:
+  contents: write # Essential to give the bot permission to push the file back to your repo
 
 jobs:
-  sync-and-build:
+  sync-and-save:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Source Code
@@ -22,19 +25,29 @@ jobs:
           pip install pandas
           python -c "
           import pandas as pd
-          # Paste your published Google Sheets CSV link below
-          url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQtiBakTflkiKuB5evW4VyLPjx6AVuchwgVEPd8dHXpXNtOuEXyXH7kf5kXxx_v-BkwpvpU8m3aDFta/pub?gid=0&single=true&output=csv'
+          import os
+          
+          # Force create the directory structure if it's missing in the container
+          os.makedirs('docs', exist_ok=True)
+          
+          url = 'PASTE_YOUR_COPIED_GOOGLE_SHEETS_CSV_LINK_HERE'
           df = pd.read_csv(url)
           
-          # Strips out internal data, matching your exact column names
+          # Strips out internal data, grabbing the exact public columns
           public_columns = ['Feature Request', 'Request Platform(s)', 'Category', 'Status', 'Update Implemented']
           filtered_df = df[public_columns]
           
-          # Saves it cleanly straight into your MkDocs data folder
+          # Saves it locally to your docs folder
           filtered_df.to_csv('docs/roadmap.csv', index=False)
           "
 
-      - name: Deploy Updated Wiki Live
+      - name: Commit and Push CSV Back to Repository
         run: |
-          pip install mkdocs-material mkdocs-table-reader-plugin
-          mkdocs gh-deploy --force
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          git add docs/roadmap.csv
+          
+          # Only commit if changes actually exist to avoid empty commit pipeline breaks
+          git diff-index --quiet HEAD || git commit -m "Automated update of public feature backlog"
+          git push
