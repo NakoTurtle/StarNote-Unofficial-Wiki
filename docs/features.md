@@ -1,76 +1,24 @@
+# 🛰️ StarNote Feature Roadmap & Backlog
+
+Welcome to the community StarNote development tracker! This page displays a collection of community-driven feature requests, optimization ideas, and layout tools. These feature requests were aggregated from the reddit and discord communities. The the public backlog is approximately prioritized based on community request frequency alongside implementation effort metrics.
+
+If a feature you are waiting for is currently marked as `Backlog`, be sure to review the **Workaround(s)** column for any known alternative workflows you can use in the app right now.
+
 ---
-markmap:
-  colorFreezeLevel: 2
-  style: |
-    .markmap-node-text { fill: var(--md-typeset-color); }
-    .markmap-node-circle { stroke: var(--md-primary-fg-color); }
-    .markmap-link { stroke: var(--md-primary-fg-color--light); }
+
+### 🗺️ Community Interaction Hub
+
+???+ warning "Important"
+  Note that this is exclusively for feature requests and that bug reports are not currently being supported. Please carefully go through the feature request tracker and form responses pages in the google sheet before making a submission to prevent duplicate requests. This is not meant to replace the current feature requests on reddit, discord, or via the app, so please continue to request as you usually did, but if you have the time and would like to contribute to this list, feel free to fill in this form to get it sent in.
+
+* ** Did we miss a requested feature?** Fill out our community submission form here: [Record a Requested Feature (Google Form Link)](https://docs.google.com/forms/d/e/1FAIpQLSeH92q_zag-ijT9vNkCwHeTGPGPkkoahlMy-82mBDLsvJ3UvA/viewform?usp=pp_url&entry.422120577=Android&entry.422120577=iPadOS/iOS&entry.839235491=Complex&entry.1542739961=No&entry.1087489470=None&entry.1031671863=Rare&entry.1736216214=Backlog&entry.639243131=None&entry.330589790=None)
+* ** Prefer to inspect the full development metrics?** View the unedited master tracker with complexity scores, form responses, and category filters here: [StarNote Public List of Feature Requests (Google Sheet Link)](https://docs.google.com/spreadsheets/d/1f8trXx72BHLqPGSAb8JBAlZ_6gKqMxU8zO3AbciiH3I/edit?gid=0#gid=0)
+
 ---
-# 🚀 Feature Tracker
 
-```markmap
-# 🛰️ StarNote Community Suggestions (April 2026)
+### 🚀 Feature Requests
+<div class="md-typeset__table" style="overflow-x: auto;">
 
-## ⚙️ STEM Needs
-* **LaTeX Math Support**
-    * Inline rendering
-    * Equation to Text
-* **Integrated Tools**
-    * Scientific Calculator
-    * Unit Converter
-    * Function Plotter
+{{ read_csv('docs/roadmap.csv', select=['Feature Request', 'Category', 'Status', 'Workaround(s)'], sort_by='Priority Score') }}
 
-## ✏️ Workflow & Lasso
-* **Persistent Lasso Auto-Scroll** (Edge detection)
-* **Space-Maker Tool** (Select All Below)
-* **Object Grouping**
-* **Precise Scaling** (Numerical input)
-* **Custom One Stroke Shaping Delay**
-* **More custom gestures**
-* **Full Keyboard Support** (With Shortcuts and mouse/trackpad input)
-* **Stylus Tilt Detection** (e.g. for pencil like in Sketchbook app)
-* **Option to Export Selection** (Especially for infinite note type)
-* **Word-like note mode** (For text editing in markdown/latex, with inkboxes for drawing)
-
-## 📂 Platforms & Sync
-* **Native Windows App**
-* **Incremental Live Sync**
-* **WebDAV Integration**
-* **Multiple Starnote App Instances for advanced multitasking**
-
-## 🎨 Tool Improvements
-* **Scribble to Erase** (for iOS)
-* **Pressure Curve Tuner**
-* **Infinite Color Palettes**
-* **Audio Markers** (Timestamps)
-
-## 📐 Shape Intelligence
-* **Node Editing**
-    * Drag-and-drop anchor points
-    * Curve manipulation (Bézier handles)
-    * Snap to grid options
-    * Custom grids (isometric, 1, 2, 3 point perspectives, cartesian, polar, etc.)
-    * Relative shape alignment
-    * Equidistant snapping
-    * Smart Color Fill
-* **Technical Shapes**
-    * Square Root symbol
-    * Coordinate Axis generator
-    * Logic Gate and Circuit Diagram library (STEM)
-* **Metadata Overlay**
-    * Permanent Angle labels
-    * Real-time Side Lengths
-
-## 📲 Navigation & UI
-* **Sticker Categories** (Folders)
-* **Image Backround Removal for Sticker Creation**
-* **Smart Reminders** (Sticker alerts)
-* **Page-Specific Themes**
-* **Custom Toolbar Anchoring**
-* **Themes & Aesthetics**
-    * **True AMOLED Theme**
-    * **Custom UI Theme Colors** (Background Color, Background Image, Buttons, sidebars, etc.)
-    * **Community Theme Marketplace**
-    * **Stormy/Rainy Backgrounds** (Live background)
-
-```
+</div>
