@@ -44,7 +44,7 @@ jobs:
           df = df.sort_values(by='Priority Score', ascending=False)
           
           # 4. Define the exact public columns you want to display on the wiki
-          public_columns = ['Feature Request', 'Category', 'Status', 'Workaround(s)', 'Update Implemented']
+          public_columns = ['Feature Request', 'Category', 'Status', 'Workaround(s)']
           filtered_df = df[public_columns]
           
           # 5. Save the perfectly ordered table straight to your docs folder
