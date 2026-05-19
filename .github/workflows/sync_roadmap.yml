@@ -27,17 +27,27 @@ jobs:
           import pandas as pd
           import os
           
-          # Force create the directory structure if it's missing in the container
+          # Force create the directory structure if it's missing
           os.makedirs('docs', exist_ok=True)
           
-          url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQtiBakTflkiKuB5evW4VyLPjx6AVuchwgVEPd8dHXpXNtOuEXyXH7kf5kXxx_v-BkwpvpU8m3aDFta/pub?gid=0&single=true&output=csv'
+          url = 'YOUR_GOOGLE_SHEETS_CSV_LINK_HERE'
           df = pd.read_csv(url)
           
-          # Strips out internal data, grabbing the exact public columns
-          public_columns = ['Feature Request', 'Request Platform(s)', 'Category', 'Status', 'Update Implemented']
+          # 1. Clean column names to strip out accidental trailing spaces
+          df.columns = df.columns.str.strip()
+          
+          # 2. Convert Priority Score to numeric so it sorts mathematically, not alphabetically
+          # (Assuming your column header is named 'Priority Score')
+          df['Priority Score'] = pd.to_numeric(df['Priority Score'], errors='coerce')
+          
+          # 3. Sort by Priority Score in descending order (highest score at the top)
+          df = df.sort_values(by='Priority Score', ascending=False)
+          
+          # 4. Define the exact public columns you want to display on the wiki
+          public_columns = ['Feature Request', 'Category', 'Status', 'Workaround(s)', 'Update Implemented']
           filtered_df = df[public_columns]
           
-          # Saves it locally to your docs folder
+          # 5. Save the perfectly ordered table straight to your docs folder
           filtered_df.to_csv('docs/roadmap.csv', index=False)
           "
 
