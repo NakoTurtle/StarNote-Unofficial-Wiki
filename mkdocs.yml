@@ -69,7 +69,7 @@ nav:
       - Cloud Backup & Sync: sync.md
       - Local File Backups: backups.md
   - Community Data:
-      - Feature Tracker: features.md
+      - Feature Tracker: roadmap.md
       - Most Wanted: most_wanted.md
   - Technical:
       - Hardware Guide: hardware.md
