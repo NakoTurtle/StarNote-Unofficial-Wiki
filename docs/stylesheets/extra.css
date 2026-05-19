@@ -34,3 +34,12 @@ Light Mode: #FBFBFB
     display: none !important;
 }
 
+/* Automatically makes every markdown table scrollable on mobile screens */
+@media screen and (max-width: 768px) {
+    .md-typeset table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
