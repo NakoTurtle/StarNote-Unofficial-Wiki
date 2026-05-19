@@ -18,8 +18,4 @@ If a feature you are waiting for is currently marked as `Backlog`, be sure to re
 
 ### 🚀 Feature Requests
 
-<div class="md-typeset__table" style="overflow-x: auto;">
-
 {{ read_csv('docs/roadmap.csv') }}
-
-</div>
