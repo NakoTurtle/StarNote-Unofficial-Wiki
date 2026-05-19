@@ -47,7 +47,7 @@ extra_css:
   - stylesheets/extra.css
 plugins:
 - search
-- markmap
+- table-reader
 nav:
   - Home: index.md
   - Getting Started:
