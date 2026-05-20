@@ -9,16 +9,16 @@ Technical Shape Library,Shape & Geometry,Backlog,Import custom stickers of symbo
 Object Grouping,Infinite Note,Backlog,
 Improved Hyperlinking,Other Tools,Backlog,Hyperlinking is already available
 Vertical Space Adjustment Tool,Infinite Note,Backlog,Use lasso tool to move content down
-Custom Timer Ringtone,UI & Customization,Backlog,
+Incremental Live Sync,Backup & Sync,In Progress,Manual export/import of backup files
 Gif Support,Multimedia & Stickers,Backlog,
 Notes Sort by Size,UI & Customization,Backlog,
 Persistent Lasso Selection While Panning,Canvas Guides & Rulers,Backlog,Use Cut/Copy and paste or reselect
+Custom Timer Ringtone,UI & Customization,Backlog,
 Tilt Detection,Writing & Stylus,Backlog,
-Native Desktop App,Backup & Sync,Backlog,
 "Object Flip, Mirror and Opacity",Other Tools,Backlog,Mirror before importing
 Node Editing (Bezier),Shape & Geometry,Backlog,
+Native Desktop App,Backup & Sync,Backlog,
 Unit Converter,STEM Tools,Backlog,Use Google Search in split-screen
-Incremental Live Sync,Backup & Sync,In Progress,Manual export/import of backup files
 Custom App Icon,UI & Customization,Backlog,
 Angle Lock for Ruler Tool,Canvas Guides & Rulers,Backlog,
 Include Add to Existing Note to Import Interface,"Document Import, Export & Output",Backlog,Import and add to note separately
@@ -30,12 +30,12 @@ Handwriting Search,Smart Features,In Progress,
 Free 360 Rotation of Note while Writing,Writing & Stylus,Backlog,Turn tablet to suit writing angle
 Per-note Color Inversion toggle,Other Tools,Backlog,Color inversion is already available
 Presentation Mode,UI & Customization,Partial Rollout,
-Home Screen Widgets,Other Tools,Backlog,
+Home Screen Widgets,UI & Customization,Backlog,
 Export Quality Slider,"Document Import, Export & Output",Backlog,Use external tool like PDF24Tools
 Hotkeys & Mouse Support,UI & Customization,Backlog,
 Scientific Calculator,STEM Tools,Backlog,Use system split/floating screen with calc app or physical calculator
 WebDAV Integration,Backup & Sync,Backlog,
-Bucket Paint Tool,Other Tools,Backlog,
+Bucket Painting Tool,Other Tools,Backlog,
 Only Export Selection,Infinite Note,Backlog,Export as pdf and crop
 Word-like Note Mode,PDF Notebook,Backlog,
 Native Web App,Backup & Sync,Backlog,
