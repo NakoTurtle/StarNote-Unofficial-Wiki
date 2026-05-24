@@ -1,80 +1,86 @@
 Feature Request,Category,Status,Workaround(s)
-True AMOLED Theme,UI & Customization,Backlog,Use default dark grey/smart invert theme
+True AMOLED Theme (Pure Black UI Background),UI & Customization,Backlog,Use default dark grey/smart invert theme
 Custom Tap and Hold Delay Settings,UI & Customization,Backlog,
-User-Defined Themes,UI & Customization,Backlog,
 Expanded Color Pallette,UI & Customization,Backlog,Use color palletes/pen box
-Change Color/Opacity/Thickness of Background Pattern,Global Note Settings,Backlog,Import custom background template
+User-Defined Themes+Material Themes,UI & Customization,Backlog,
 Audio Markers,Multimedia & Stickers,Backlog,Write timestamps manually in ink
+Change Color/Opacity/Thickness of Background Pattern,Global Note Settings,Backlog,Import custom background template
 Auto Horizontal Straight Highlighter,Writing & Stylus,Backlog,Manually align to horizontal
+Style Adjustment via Toolbar/Style Adjustment Pen,Writing & Stylus,Backlog,Use normal style menu in tap & hold menu
 Technical Shape Library,Shape & Geometry,Backlog,Import custom stickers of symbols
-Vertical Space Adjustment Tool,Infinite Note,Backlog,Use lasso tool to move content down
-Improved Hyperlinking,Other Tools,Backlog,Hyperlinking is already available
-Object Grouping,Infinite Note,Backlog,
+Freehand Tape,Other Tools,In Progress,
 Improved Screenshot Tool,Other Tools,Backlog,"Use native screenshot on tablet, or use exceprt as screenshot"
+Object Grouping,Infinite Note,Backlog,
+Improved Hyperlinking,Other Tools,Backlog,Hyperlinking is already available
+Vertical Space Adjustment Tool,Infinite Note,Backlog,Use lasso tool to move content down
 Incremental Live Sync,Backup & Sync,In Progress,Manual export/import of backup files
-"Object Flip, Mirror and Opacity",Other Tools,Backlog,Mirror before importing
-Unit Converter,STEM Tools,Backlog,Use Google Search in split-screen
-Common Graphs & Bezier Curves,Shape & Geometry,Backlog,
+Custom Timer Ringtone,UI & Customization,Backlog,
+Gif Support,Multimedia & Stickers,Backlog,
 Tilt Detection,Writing & Stylus,Backlog,
 Native Desktop App,Backup & Sync,Backlog,
 Notes Sort by Size,UI & Customization,Backlog,
-Gif Support,Multimedia & Stickers,Backlog,
-Include Add to Existing Note to Import Interface,"Document Import, Export & Output",Backlog,Import and add to note separately
-Style Adjustment via Toolbar,Writing & Stylus,Backlog,Use normal style menu in tap & hold menu
-Angle Lock for Ruler Tool,Canvas Guides & Rulers,Backlog,
-Custom App Icon,UI & Customization,Backlog,
 Persistent Lasso Selection While Panning,Canvas Guides & Rulers,Backlog,Use Cut/Copy and paste or reselect
-Option to backup individual files,Backup & Sync,Backlog,Simply use automatic backup
-Built In Web Browser,UI & Customization,Backlog,Use default browser in split screen/floating window+add browser to taskbar/sidebar for quick access
+"Object Flip, Mirror and Opacity",Other Tools,Backlog,Mirror before importing
+Angle Lock for Ruler Tool,Canvas Guides & Rulers,Backlog,
+Unit Converter,STEM Tools,Backlog,Use Google Search in split-screen
+Common Graphs & Bezier Curves,Shape & Geometry,Backlog,
+Include Add to Existing Note to Import Interface,"Document Import, Export & Output",Backlog,Import and add to note separately
 Horizontal/Vertical Scroll Lock,Canvas Guides & Rulers,Backlog,
-Custom Timer Ringtone,UI & Customization,Backlog,
-Handwriting Search,Smart Features,In Progress,
-Free 360 Rotation of Note while Writing,Writing & Stylus,Backlog,Turn tablet to suit writing angle
+Built In Web Browser,UI & Customization,Backlog,Use default browser in split screen/floating window+add browser to taskbar/sidebar for quick access
+Ability to Import More than 9 Documents at Once,"Document Import, Export & Output",Backlog,Stick to importing 9 at a time
+Custom App Icon,UI & Customization,Backlog,
+Option to backup individual files,Backup & Sync,Backlog,Simply use automatic backup
 "Snap to Grid for Various Grid Types (Dot, Square, Isometric, Polar, Perspective, Etc.)",Canvas Guides & Rulers,Backlog,
+Free 360 Rotation of Note while Writing,Writing & Stylus,Backlog,Turn tablet to suit writing angle
 Save Drawing as Sticker,Multimedia & Stickers,Backlog,Store drawing templates in dedicated notebook and copy as needed
+Handwriting Search,Smart Features,In Progress,
 LaTeX Math Support,STEM Tools,Backlog,Screenshot from external web math editors
 Scientific Calculator,STEM Tools,Backlog,Use system split/floating screen with calc app or physical calculator
-Only Export Selection,Infinite Note,Backlog,Export as pdf and crop
-Hotkeys & Mouse Support,UI & Customization,Backlog,
-Export Quality Slider,"Document Import, Export & Output",Backlog,Use external tool like PDF24Tools
-WebDAV Integration,Backup & Sync,Backlog,
 Presentation Mode,UI & Customization,Partial Rollout,
 Parametric Arc and Pie Shapes,Shape & Geometry,Backlog,Draw manually
+Per-note Color Inversion Toggle/Once-Off Edit,Other Tools,Backlog,Color inversion is already available
+Export Quality Slider,"Document Import, Export & Output",Backlog,Use external tool like PDF24Tools
+Custom Bullet Designs,Typing & Text Elements,Backlog,
+Only Export Selection,Infinite Note,Backlog,Export as pdf and crop
 Bucket Painting Tool,Other Tools,Backlog,
-Option to Hide Pen Box,UI & Customization,Backlog,
+Hotkeys & Mouse Support,UI & Customization,Backlog,
+Increased Snapping Points for Lines & Shapes,Shape & Geometry,Backlog,
+WebDAV Integration,Backup & Sync,Backlog,
 Home Screen Widgets,UI & Customization,Backlog,
 Improved Table Input and Cell Formatting,Shape & Geometry,Backlog,Lasso and move contents together
+Option to Hide Pen Box,UI & Customization,Backlog,
 "Instant, Multi-Object Alignment (Top, Mid, Bottom, Left, Right, Center, etc.)",Canvas Guides & Rulers,Backlog,Manually align using guides
-Per-note Color Inversion toggle,Other Tools,Backlog,Color inversion is already available
-Increased Snapping Points for Lines & Shapes,Shape & Geometry,Backlog,
-Native Web App,Backup & Sync,Backlog,
+More Button Customization Gestures for S-Pen,Writing & Stylus,Backlog,
+Custom Tape Designs,Other Tools,Backlog,
 Word-like Note Mode,PDF Notebook,Backlog,
+Native Web App,Backup & Sync,Backlog,
+Paper-Like Page Effect,UI & Customization,Backlog,Use texture pdf templates
 Function Plotter,STEM Tools,Backlog,Export image from Desmos/GeoGebra
-Fit to Height/Width/Page Button,UI & Customization,Backlog,Use double tap gesture set to paper adaptive
 Support More Audio Formats,Multimedia & Stickers,Backlog,Convert to MP3
+Fit to Height/Width/Page Button,UI & Customization,Backlog,Use double tap gesture set to paper adaptive
+Protrator/Compass Tool,Canvas Guides & Rulers,Backlog,Draw circle shape and erase a section to form an arc
 Floating/Transparent/Translucent Toolbar,UI & Customization,Backlog,Hide note bar and use full screen mode with pen case
 Paste/Recognize Text with Original Formatting,Typing & Text Elements,Backlog,Re-apply formatting after pasting
+Spaced Repetition Reminder for Notes,Smart Features,Backlog,Use separate reminder app per note/topic
+True Shape Scaling and Adjustable Scaling Modes/Origin,Shape & Geometry,Backlog,Draw objects from scratch
 Equidistant Snapping/Alignment,Canvas Guides & Rulers,Backlog,Manually arrange using placeholder shapes
 More Folder Design Options (Patterns),UI & Customization,Backlog,
-True Shape Scaling and Adjustable Scaling Modes/Origin,Shape & Geometry,Backlog,Draw objects from scratch
-Protrator/Compass Tool,Canvas Guides & Rulers,Backlog,Draw circle shape and erase a section to form an arc
-Paper-Like Page Effect,UI & Customization,Backlog,Use texture pdf templates
-Custom Plugin System/API,UI & Customization,Backlog,
 Real-Time Collaboration with Sharing Link,Backup & Sync,Backlog,
-Advanced Color Wheel,UI & Customization,Backlog,Use color palletes/pen box
-Global Color Pallate Modifiers (Hue/Brightness/Opacity),Shape & Geometry,Backlog,Make preset color palletes manually
+Custom Plugin System/API,UI & Customization,Backlog,
 PDF Page Cropping,PDF Notebook,Backlog,Use external pdf cropping tool like PDF24Tools
-Video Embedding,Multimedia & Stickers,Backlog,
-SVG Image Export,"Document Import, Export & Output",Backlog,
-Option to Export Entire Folder,"Document Import, Export & Output",Backlog,Export files manually
-Multi-Keyword Search,Smart Features,Backlog,Search keywords separately or use tags
 Floating Shape Toolbox/Add Shapes to Pen Case,Shape & Geometry,Backlog,Use pinned shapes
-Sticker Bulk Import & Crop,Multimedia & Stickers,Backlog,
+Advanced Color Wheel,UI & Customization,Backlog,Use color palletes/pen box
+Video Embedding,Multimedia & Stickers,Backlog,
+Multi-Keyword Search,Smart Features,Backlog,Search keywords separately or use tags
+Option to Export Entire Folder,"Document Import, Export & Output",Backlog,Export files manually
 Collapsible Sticky Note,Typing & Text Elements,Backlog,
+Global Color Pallate Modifiers (Hue/Brightness/Opacity),Shape & Geometry,Backlog,Make preset color palletes manually
 Customizable Shortcut in Tap and Hold Menu,UI & Customization,Backlog,
+SVG Image Export,"Document Import, Export & Output",Backlog,
+Sticker Bulk Import & Crop,Multimedia & Stickers,Backlog,
+Auto-Hide and Re-Show Pen Box when Writing Over it,UI & Customization,Backlog,Pan out of the way or place the penbox away from where you're writing
 Apple Pencil Pro Squeeze Gesture Support,Writing & Stylus,Backlog,
 Custom Font Making Tool,Typing & Text Elements,Backlog,Using external tools
-Auto-Hide and Re-Show Pen Box when Writing Over it,UI & Customization,Backlog,Pan out of the way or place the penbox away from where you're writing
 Detailed Note Storage Breakdown,UI & Customization,Backlog,
 Synced Audio Playback for Multiple Audios,Multimedia & Stickers,Backlog,
 iOS-Style Interface Option,UI & Customization,Backlog,
